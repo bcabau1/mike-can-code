@@ -1,6 +1,5 @@
 import { Container, Box, Heading } from "@chakra-ui/react"
-import { mode } from '@chakra-ui/theme-tools'
-
+import Card from "../components/card"
 
 export default function Page() {
     return (
@@ -16,6 +15,15 @@ export default function Page() {
                 <p>Software engineer, math buff, and automotive enthusiest</p>
             </Box>
         </Box>
+        <Card>
+            <Heading as="h4" variant="section-title">
+                About me
+            </Heading>
+            <p>
+                
+            </p>
+        </Card>
+        
     </Container>
     )
 }
