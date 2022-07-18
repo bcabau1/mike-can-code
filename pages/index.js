@@ -18,10 +18,10 @@ export default function Page() {
         </Box>
         <Card>
             <SnippetBio>
-                /* About Mike... <br/>
-                A software engineer working remotely in the United States, but occasionally in Romania.<br/>
-                <br/>
-                <br/>
+                /* About me, Mike... <br/>
+                I am a software engineer working remotely in the United States, but occasionally in Romania. 
+                Transportation and the automotive industry are subjects I am passionate about, and incorporate this 
+                interest into personal projects and experience in the industry building enterprise software for an automotive company.<br/>
                 */
             </SnippetBio>
         </Card>
