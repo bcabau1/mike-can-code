@@ -14,7 +14,7 @@ export default function Card({ children, delay = 0 }) {
             animate={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.5, delay }}
             mb={6}
-            mt={12}
+            mt={10}
         >
             {children}
         </StyledDiv>

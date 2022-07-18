@@ -1,5 +1,6 @@
 import { Container, Box, Heading } from "@chakra-ui/react"
 import Card from "../components/card"
+import SnippetBio from "../components/snippetbio"
 
 export default function Page() {
     return (
@@ -16,12 +17,13 @@ export default function Page() {
             </Box>
         </Box>
         <Card>
-            <Heading as="h4" variant="section-title">
-                About me
-            </Heading>
-            <p>
-                
-            </p>
+            <SnippetBio>
+                /* About me... <br/>
+                *<br/>
+                *<br/>
+                *<br/>
+                */
+            </SnippetBio>
         </Card>
         
     </Container>

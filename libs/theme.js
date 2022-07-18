@@ -15,7 +15,7 @@ const styles = {
 const components = {
   Heading: {
     baseStyle: props => ({
-        color: mode('#272343', '#fffffe')(props),
+        color: mode('#272343', '#fffffe')(props)
       }),
     variants: {
       'section-title': {
@@ -38,7 +38,8 @@ const components = {
 }
 
 const fonts = {
-  heading: "'M PLUS Rounded 1c'"
+  heading: "'M PLUS Rounded 1c'",
+  snippit: "'Roboto Mono', monospace"
 }
 
 const colors = {
