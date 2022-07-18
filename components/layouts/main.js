@@ -10,7 +10,7 @@ export default function Main({children, router})  {
                 <title>Mike Can Code - Home</title>
             </Head>
             <Navbar path={router.aspath}/>
-            <Container maxW="container.md" pt={14}>
+            <Container maxW="container.lg" pt={14}>
                 {children}
             </Container>
         </Box>

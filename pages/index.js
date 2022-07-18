@@ -4,7 +4,7 @@ import SnippetBio from "../components/snippetbio"
 
 export default function Page() {
     return (
-    <Container maxW="90ch">
+    <Container maxW="80ch">
         <Box borderRadius="lg" align="center" bg='#bae8e8' p={3} mb={6}>
             Hello there, I am a Software Engineer! 
         </Box>
@@ -18,10 +18,10 @@ export default function Page() {
         </Box>
         <Card>
             <SnippetBio>
-                /* About me... <br/>
-                *<br/>
-                *<br/>
-                *<br/>
+                /* About Mike... <br/>
+                A software engineer working remotely in the United States, but occasionally in Romania.<br/>
+                <br/>
+                <br/>
                 */
             </SnippetBio>
         </Card>
