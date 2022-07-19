@@ -50,13 +50,13 @@ export default function Navbar(props) {
     >
       <Container
         display="flex"
-        p={2}
+        p={2.5}
         maxW="container.xl"
         wrap="wrap"
         align="center"
         justify="space-between"
       >
-        <Flex align="center" mr={5}>
+        <Flex align="center" mr={8}>
           <Heading as="h1" size="lg" letterSpacing={'tighter'}>
             <NavBarTitle/>
           </Heading>
