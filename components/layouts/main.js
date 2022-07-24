@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Navbar from '../navbar'
 import {Box, Container } from '@chakra-ui/react'
+import Scene from '../cube'
 
 export default function Main({children, router})  {
     return (
@@ -10,7 +11,7 @@ export default function Main({children, router})  {
                 <title>Mike Can Code - Home</title>
             </Head>
             <Navbar path={router.aspath}/>
-            <Container maxW="container.lg" pt={14}>
+            <Container maxW="container.2xl" pt={14}>
                 {children}
             </Container>
         </Box>

@@ -19,14 +19,12 @@ const components = {
       }),
     variants: {
       'section-title': {
-        textDecoration: 'underline',
-        fontSize: 20,
-        textUnderlineOffset: 6,
-        textDecorationColor: '#525252',
-        textDecorationThickness: 4,
-        marginTop: 3,
-        marginBottom: 4
-      }
+        fontSize: 'calc(12px + 6vw)',
+      },
+      'sub-title': props => ({
+        fontSize: 'calc(10px + 1vw)',
+        color: mode('#2d334a', '#b8c1ec')(props)
+      })
     }
   },
   Link: {
@@ -38,7 +36,7 @@ const components = {
 }
 
 const fonts = {
-  heading: "'M PLUS Rounded 1c'",
+  heading: "'Asap', sans-serif",
   snippit: "'Roboto Mono', monospace"
 }
 

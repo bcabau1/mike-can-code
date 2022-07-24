@@ -24,7 +24,7 @@ const NavBarTitle = () => {
             fontWeight="bold"
             ml={3}
           >
-            {"{ MikeCanCode }"}
+            {"MikeCanCode"}
           </Text>
         </NavBox>
       </a>

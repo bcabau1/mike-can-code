@@ -43,15 +43,15 @@ export default function Navbar(props) {
       position="fixed"
       as="nav"
       w="100%"
-      //bg={useColorModeValue('#ffffff40', '#20202380')}
-      css={{ backdropFilter: 'blur(10px)' }}
-      zIndex={2}
+      bg={useColorModeValue('#fffffe', '#232946')}
+      //css={{ backdropFilter: 'blur(10px)' }}
+      zIndex={99}
       {...props}
     >
       <Container
         display="flex"
-        p={2.5}
-        maxW="container.xl"
+        p={3}
+        maxW="container.2xl"
         wrap="wrap"
         align="center"
         justify="space-between"
