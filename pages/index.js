@@ -5,8 +5,8 @@ import Scene from "../components/cube"
 
 export default function Page() {
     return (
-    <Container maxW="container.xl">
-        <Box maxW="70%" float='left' height="100vh" outline={'1px solid pink'}>
+        <Container maxW="container.xl">
+        <Box w="70%" float='left' height="100vh" outline={'1px solid pink'}>
             <Box display={{md:'flex'}} mt={'20%'}>
                 <Box flexGrow={1}>
                     <Heading as="h1" variant="section-title">
@@ -25,10 +25,11 @@ export default function Page() {
                 </SnippetBio>
             </Card>
         </Box>
-        <Box w={'30%'} h={'750px'} ml='70%'>
-            <Scene/>
+        <Box w={'30%'} h={'100vh'} ml='70%' outline={'1px solid red'}>
+            <Box position='fixed' w='100%' h='100%' outline={'1px solid pink'} ml="0%" mt='0%'>
+
+            </Box>
         </Box>
-            
-    </Container>
+        </Container>    
     )
 }
