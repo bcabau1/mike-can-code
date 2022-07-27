@@ -12,12 +12,13 @@ import {
   MenuList,
   MenuButton,
   IconButton,
-  useColorModeValue
+  useColorModeValue,
+  Text
 } from '@chakra-ui/react'
 import { HamburgerIcon } from '@chakra-ui/icons'
 import ToggleTheme from './toggletheme'
 
-const LinkItem = ({ href, path, target, children, ...props }) => {
+export const LinkItem = ({ href, path, target, children, ...props }) => {
   const active = path === href
   const inactiveColor = useColorModeValue('#2d334a', '#b8c1ec')
   return (
@@ -71,13 +72,13 @@ export default function Navbar(props) {
           mt={{ base: 4, md: 0 }}
         >
           <LinkItem href="/projects" path={path}>
-            Projects
+            <Text >Projects</Text>
           </LinkItem>
           <LinkItem href="/posts" path={path}>
-            Posts
+            <Text >Posts</Text>
           </LinkItem>
           <LinkItem href="/contact" path={path}>
-            Contact Me
+            <Text >Contact Me</Text>
           </LinkItem>
         </Stack>
 
