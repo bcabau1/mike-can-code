@@ -19,10 +19,10 @@ const components = {
       }),
     variants: {
       'section-title': {
-        fontSize: 'calc(16px + 6.5vw)',
+        fontSize: 'calc(24px + 6vw)',
       },
       'sub-title': props => ({
-        fontSize: 'calc(12px + 1vw)',
+        fontSize: 'calc(14px + 1vw)',
         color: mode('#2d334a', '#b8c1ec')(props)
       })
     }

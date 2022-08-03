@@ -4,7 +4,7 @@ import { useColorModeValue } from '@chakra-ui/react'
 
 export default function NotFound() {
   return (
-    <Container my="20%" maxW='80ch'>
+    <Container my="30vh" maxW='container.xl'>
       <Heading as="h1" align="center">404, page nowhere to be seen...</Heading>
       <Box my={6} align="center">
         <NextLink href="/" passHref>

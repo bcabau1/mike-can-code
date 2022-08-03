@@ -1,13 +1,12 @@
 import { Container, Box, Heading, Button } from "@chakra-ui/react"
 import SnippetBio from "../components/snippetbio"
-import Scene from "../components/cube"
+import Scene from "../components/scene"
 import ButtonBar from "../components/buttonbar"
 
 export default function Page(router) {
     return (
         <Container maxW="container.xl">
-        <Box w="70%" float='left' height="100%" outline={'1px solid pink'}>
-            <Box display={{md:'flex'}} mt={'20vh'}>
+            <Box display={{md:'flex'}} mt='20vh'>
                 <Box flexGrow={1}>
                     <Heading as="h1" variant="section-title">
                         Michael Cabau
@@ -22,12 +21,6 @@ export default function Page(router) {
                 my personal projects.<br/>
                 */
             </SnippetBio>
-        </Box>
-        <Box w={'30%'} h={'80vh'} ml='70%' outline={'1px solid red'}>
-            <Box position='fixed' w='100%' h='100%' outline={'1px solid pink'} ml="0%" mt='0%'>
-
-            </Box>
-        </Box>
         </Container>    
     )
 }
