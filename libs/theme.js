@@ -19,7 +19,7 @@ const components = {
       }),
     variants: {
       'section-title': {
-        fontSize: 'calc(24px + 6vw)',
+        fontSize: 'calc(24px + 6.25vw)',
       },
       'sub-title': props => ({
         fontSize: 'calc(14px + 1vw)',
