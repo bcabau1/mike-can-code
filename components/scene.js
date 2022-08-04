@@ -3,7 +3,7 @@ import { Canvas, useLoader } from '@react-three/fiber'
 import { OrbitControls } from "@react-three/drei";
 import { OBJLoader } from 'three/examples/jsm/loaders/OBJLoader'
 import { MTLLoader } from 'three/examples/jsm/loaders/MTLLoader'
-import Loader from './sidebar'
+import {  Box, Flex } from '@chakra-ui/layout';
 
 export function Model() {
 
@@ -16,7 +16,7 @@ export function Model() {
   console.log(obj);
   return (
     <mesh>
-      <primitive object={obj} scale={3}/>
+      <primitive object={obj} scale={.95} position={[0,-2.90,0]}/>
     </mesh> 
     )
   
@@ -24,14 +24,15 @@ export function Model() {
 
 export default function Scene() {
   return (
-    
-      <Canvas >
-        <ambientLight/>
-        <OrbitControls/>
-        <Suspense fallback={null}>
-          <Model/>
-        </Suspense>
-      </Canvas>
+        <Box position='relative' w='100%' h = 'calc(150px + 20vw)' border='1px solid blue'>
+          <Canvas >
+            <ambientLight/>
+            <OrbitControls/>
+            <Suspense fallback={null}>
+              <Model/>
+            </Suspense>
+          </Canvas>
+        </Box>    
   );
 }
 

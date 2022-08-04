@@ -12,8 +12,8 @@ export default function Main({children, router})  {
                 <title>Mike Can Code - Home</title>
             </Head>
             <Navbar path={router.aspath}/>
-            <Container maxW="container.xl" pt={14}>
-                <Box w="70%" float='left'>
+            <Container maxW="container.xl" >
+                <Box w="70%" h='100vh' float='left'>
                     {children}
                 </Box>
                 <Box w={'30%'} h={'100%'} ml='70%' outline='1px solid pink'>
