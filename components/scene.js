@@ -31,7 +31,7 @@ export function Model() {
 
 export default function Scene() {
   return (
-        <Box position='relative' w='100%' h = 'calc(125px + 20vw)' border='1px solid blue'>
+        <Box position='relative' w='100%' h = 'calc(125px + 20vw)' >
           <Canvas >
             <ambientLight/>
             <OrbitControls/>

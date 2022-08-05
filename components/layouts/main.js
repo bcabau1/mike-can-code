@@ -2,7 +2,6 @@ import Head from 'next/head'
 import Navbar from '../navbar'
 import {Box, Container } from '@chakra-ui/react'
 import Sidebar from '../sidebar'
-import Scene from '../scene'
 
 export default function Main({children, router})  {
     return (
@@ -13,14 +12,13 @@ export default function Main({children, router})  {
             </Head>
             <Navbar path={router.aspath}/>
             <Container maxW="container.xl" >
-                <Box w="70%" h='100vh' float='left'>
+                <Box w="75%" h='100vh' float='left'>
                     {children}
                 </Box>
-                <Box w={'30%'} h={'100%'} ml='70%' outline='1px solid pink'>
+                <Box w={'30%'} h={'100%'} ml='75%'>
                     <Sidebar/>
                 </Box>
             </Container>
-            
         </Box>
     )
 }
