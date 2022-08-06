@@ -5,7 +5,7 @@ import ButtonBar from "../components/buttonbar"
 
 export default function Page(router) {
     return (
-        <Container h='100%' maxW="container.xl" >
+        <Container h='100%' maxW="container.xl" pl='0px'>
             <Flex position='relative' w = '100%' h='100%' align='center'>
                 <Box>
                     <Box display={{md:'flex'}}>

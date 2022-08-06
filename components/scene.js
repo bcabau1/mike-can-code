@@ -11,7 +11,7 @@ export function Model() {
   const meshref = useRef();
 
   useFrame(({ clock }) => {
-    meshref.current.rotation.y = Math.sin(clock.getElapsedTime()/5)
+    meshref.current.rotation.y = Math.sin(clock.getElapsedTime()/2)/3
   })
 
   const materials = useLoader(MTLLoader, "/racer-0.mtl");
