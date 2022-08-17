@@ -23,7 +23,7 @@ export function Model() {
   console.log(obj);
   return (
     <mesh ref={meshref}>
-      <primitive object={obj} scale={.9} position={[0,-2.65,0]}/>
+      <primitive object={obj} scale={.85} position={[0,-2.65,0]}/>
     </mesh> 
     )
   
