@@ -34,7 +34,6 @@ export default function Scene() {
         <Box position='relative' w='100%' h = 'calc(125px + 20vw)' >
           <Canvas >
             <ambientLight/>
-            <OrbitControls/>
             <Suspense fallback={null}>
               <Model/>
             </Suspense>

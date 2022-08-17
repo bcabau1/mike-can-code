@@ -11,11 +11,11 @@ export default function Main({children, router})  {
                 <title>Mike Can Code - Home</title>
             </Head>
             <Navbar path={router.aspath}/>
-            <Container maxW="container.xl">
-                <Box w="75%" h='100vh' float='right' ml='25%'>
+            <Container maxW="container.2xl">
+                <Box w="77%" h='100vh' float='right' ml='23%'>
                     {children}
                 </Box>
-                <Box w={'15%'} h={'100%'} ml='-3% + 2'>
+                <Box w={'20%'} h={'100%'} ml='2'>
                     <Sidebar/>
                 </Box>
             </Container>
