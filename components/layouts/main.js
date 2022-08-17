@@ -12,10 +12,10 @@ export default function Main({children, router})  {
             </Head>
             <Navbar path={router.aspath}/>
             <Container maxW="container.2xl">
-                <Box w="77%" h='100vh' float='right' ml='23%'>
+                <Box w="75%" h='100vh' float='right' ml='25%' pr='3%'>
                     {children}
                 </Box>
-                <Box w={'20%'} h={'100%'} ml='2'>
+                <Box w={'18%'} h={'100%'} ml='2'>
                     <Sidebar/>
                 </Box>
             </Container>

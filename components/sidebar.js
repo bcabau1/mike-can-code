@@ -10,9 +10,9 @@ import { AiFillLinkedin } from "react-icons/ai";
 export default function Sidebar()   {
 
     return (
-        <Box position='fixed' transform={'translateX(0)'} h='100%' w='20%'  >
+        <Box position='fixed' transform={'translateX(0)'} h='100%' w='18%'  >
             <Flex position='relative' w = '100%' h='100%' align='center' >  
-                <Box position='relative' w = '100%' align='center' mt='35px' >
+                <Box position='relative' w = '100%' align='center' mt='25px' >
                     <Scene/>
                     
                     <IconButton mr='8px'

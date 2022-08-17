@@ -1,19 +1,20 @@
-import {NextLink} from 'next/link'
-import { Box, Text, Stack, Button, Link } from '@chakra-ui/react'
+import { Box,  IconButton, Icon } from '@chakra-ui/react'
 import { useColorModeValue } from '@chakra-ui/react'
-import { LinkItem } from './navbar'
+import { BsChevronCompactDown } from "react-icons/bs";
 
 export default function ButtonBar() {
 
     return (
-        <Box w='100%' display='flex' mt='40px'>
-            <Stack direction={{ base: 'column', md: 'row' }} display={{ base: 'none', md: 'flex' }} width={{ base: 'full', md: 'auto' }} alignItems="center" flexGrow={1} mt={{ base: 4, md: 0 }}>
-                <Link as='NextLink' to="/">
-                        <Text w='50vh' mr="8px" textAlign='left' fontSize='lg' fontFamily={'heading'} color={useColorModeValue('#94a1c2','#b8c1ec')}>
-                            Learn more about me.
-                        </Text>
-                </Link>
-            </Stack>
+        <Box w='100%' mt='25px' position='relative' >
+
+             <IconButton display='block' margin='auto'
+                    size='lg'
+                    isRound={true}
+                    aria-label="change theme"
+                    variant="ghost"
+                    colorScheme={useColorModeValue('gray', 'gray')}
+                    icon={<Icon as={BsChevronCompactDown} h='45px' w='100px'/>}
+                    ></IconButton>
         </Box>
     )
 }
