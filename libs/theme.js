@@ -4,10 +4,10 @@ import { mode } from '@chakra-ui/theme-tools'
 const styles = {
   global: props => ({
     body: {
-      bg: mode('#fffffe', '#232946')(props)
+      bg: mode('#eff0f3', '#16161a')(props)
     },
     p:{
-      color: mode('#2d334a', '#b8c1ec')(props)
+      color: mode('#2d334a', 'white')(props)
     }
   })
 }
@@ -23,7 +23,7 @@ const components = {
       },
       'sub-title': props => ({
         fontSize: 'calc(14px + 1vw)',
-        color: mode('#2d334a', '#b8c1ec')(props)
+        color: mode('#2d334a', '#94a1b2')(props)
       })
     }
   },
@@ -37,7 +37,7 @@ const components = {
 
 const fonts = {
   heading: "'Asap', sans-serif",
-  snippit: "'Roboto Mono', monospace"
+  snippit: "'Figtree', sans-serif"
 }
 
 const colors = {
@@ -45,7 +45,7 @@ const colors = {
 }
 
 const config = {
-  initialColorMode: 'light',
+  initialColorMode: 'dark',
   useSystemColorMode: true
 }
 

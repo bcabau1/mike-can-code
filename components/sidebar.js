@@ -10,12 +10,12 @@ import { AiFillLinkedin } from "react-icons/ai";
 export default function Sidebar()   {
 
     return (
-        <Box position='fixed' transform={'translateX(0)'} h='100%' w='18%'  >
-            <Flex position='relative' w = '100%' h='100%' align='center' >  
+        <Box position='fixed' transform={'translateX(0)'} h='100%' w='18%' >
+            <Flex position='relative' w = '100%' h='100%' align='center'  >  
                 <Box position='relative' w = '100%' align='center' mt='25px' >
                     <Scene/>
                     
-                    <IconButton mr='8px'
+                    <IconButton mx='4px'
                     size='lg'
                     isRound={true}
                     aria-label="change theme"
@@ -24,7 +24,7 @@ export default function Sidebar()   {
                     icon={<Icon as={GoMarkGithub} h='25px' w='25px'/>}
                     ></IconButton>
 
-                    <IconButton mr='8px'
+                    <IconButton mx='4px'
                     size='lg'
                     isRound={true}
                     aria-label="change theme"
@@ -33,7 +33,7 @@ export default function Sidebar()   {
                     icon={<Icon as={AiFillLinkedin} h='25px' w='25px'/>}
                     ></IconButton>
 
-                    <IconButton
+                    <IconButton mx='4px'
                     size='lg'
                     isRound={true}
                     aria-label="change theme"

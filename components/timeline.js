@@ -16,7 +16,7 @@ export const TimelineElement = ({children}) =>  {
 export default function Timeline()  {
     return (
         <Container>
-            <TimelineElement>Hi</TimelineElement>
+            <TimelineElement></TimelineElement>
         </Container>
     )
 }

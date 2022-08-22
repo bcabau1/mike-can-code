@@ -1,20 +1,13 @@
-import { Box,  IconButton, Icon } from '@chakra-ui/react'
-import { useColorModeValue } from '@chakra-ui/react'
+import { Box, Button, IconButton, Icon, Text, useColorModeValue } from '@chakra-ui/react'
 import { BsChevronCompactDown } from "react-icons/bs";
 
-export default function ButtonBar() {
+export default function ButtonBar({children}) {
 
     return (
         <Box w='100%' mt='25px' position='relative' >
-
-             <IconButton display='block' margin='auto'
-                    size='lg'
-                    isRound={true}
-                    aria-label="change theme"
-                    variant="ghost"
-                    colorScheme={useColorModeValue('gray', 'gray')}
-                    icon={<Icon as={BsChevronCompactDown} h='45px' w='100px'/>}
-                    ></IconButton>
+             <Button display='block' margin='auto' borderRadius='full' w='15em' bg={useColorModeValue('#ff8e3c', '#7f5af0')}>
+                        <Text as='h3' fontSize='calc(10px + .5vw)'>{children}</Text>
+                    </Button>
         </Box>
     )
 }

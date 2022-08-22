@@ -44,14 +44,14 @@ export default function Navbar(props) {
       position="fixed"
       as="nav"
       w="100%"
-      bg={useColorModeValue('#fffffe', '#232946')}
+      bg={useColorModeValue('#fffffe', '#242629')}
       //css={{ backdropFilter: 'blur(10px)' }}
       zIndex={99}
       {...props}
     >
       <Container
         display="flex"
-        p={3}
+        p={2}
         maxW="container.2xl"
         wrap="wrap"
         align="center"
@@ -63,7 +63,7 @@ export default function Navbar(props) {
           </Heading>
         </Flex>
 
-        <Stack
+        <Stack fontFamily='heading'
           direction={{ base: 'column', md: 'row' }}
           display={{ base: 'none', md: 'flex' }}
           width={{ base: 'full', md: 'auto' }}
@@ -71,11 +71,11 @@ export default function Navbar(props) {
           flexGrow={1}
           mt={{ base: 4, md: 0 }}
         >
+          <LinkItem href="/experience" path={path}>
+            <Text>Experience</Text>
+          </LinkItem>
           <LinkItem href="/projects" path={path}>
             <Text >Projects</Text>
-          </LinkItem>
-          <LinkItem href="/experience" path={path}>
-            <Text >Experience</Text>
           </LinkItem>
           <LinkItem href="/contact" path={path}>
             <Text >Contact Me</Text>
@@ -92,15 +92,15 @@ export default function Navbar(props) {
                 variant="ghost"
                 aria-label="Options"
               />
-              <MenuList>
+              <MenuList >
                 <NextLink href="/" passHref>
                   <MenuItem as={Link}>About</MenuItem>
                 </NextLink>
-                <NextLink href="/projects" passHref>
-                  <MenuItem as={Link}>Projects</MenuItem>
-                </NextLink>
                 <NextLink href="/experience" passHref>
                   <MenuItem as={Link}>Experience</MenuItem>
+                </NextLink>
+                <NextLink href="/projects" passHref>
+                  <MenuItem as={Link}>Projects</MenuItem>
                 </NextLink>
                 <NextLink href="/contact" passHref>
                   <MenuItem as={Link}>Contact Me</MenuItem>
