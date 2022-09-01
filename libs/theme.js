@@ -3,8 +3,11 @@ import { mode } from '@chakra-ui/theme-tools'
 
 const styles = {
   global: props => ({
+    html: {
+      scrollBehavior: 'smooth'
+    },
     body: {
-      bg: mode('#eff0f3', '#16161a')(props)
+      bg: mode('#eff0f3', '#16161a')(props),
     },
     p:{
       color: mode('#2d334a', 'white')(props)
@@ -19,7 +22,7 @@ const components = {
       }),
     variants: {
       'section-title': {
-        fontSize: 'calc(36px + 6.5vw)',
+        fontSize: 'calc(48px + 5vw)',
       },
       'sub-title': props => ({
         fontSize: 'calc(14px + 1vw)',
