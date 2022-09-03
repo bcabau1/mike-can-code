@@ -1,13 +1,13 @@
-import { Container, Box, Heading, Flex, Divider, useColorModeValue } from "@chakra-ui/react"
+import { Container, Box, Heading, Flex, Divider, useColorModeValue, Stack } from "@chakra-ui/react"
 import SnippetBio from "../components/snippetbio"
 import ButtonBar from "../components/buttonbar"
 import TabBanner from "../components/tabbanner"
 
 export default function Page(router) {
     return (
-        <Container h='100%' maxW="100%" pl='10px' mt='20px'>
-            <Flex position='relative' w = '100%' h='100%' align='center'>
-                <Box>
+        <Container h='100%' maxW="100%" pl='10px' >
+            <Flex position='relative' w = '100%' h='100%' align='center' overflow='auto' id='intro'>
+                <Box position='relative' py='8' w = '100%'>
                     <Box display={{md:'flex'}}>
                         <Box flexGrow={1}>
                             <Heading as="h1" variant="section-title" textAlign='center' lineHeight='75px'>
@@ -26,7 +26,10 @@ export default function Page(router) {
                     <ButtonBar>Learn more about me.</ButtonBar>
                 </Box>
             </Flex>
-            <Flex position='relative' w = '100%' h='100%' mt='20px' align='center' justify='center' border='1px solid white' id='banners'>
+            <Flex position='relative' w = '100%' h='100%' align='center' flexWrap='wrap' justify='center' id='banners' overflow='auto' py='10%'>
+                <Heading  w='100%' as="h3" mt='4vh' textAlign='center' variant="banner-title">
+                     You should definitely check out my...
+                </Heading>
                 <TabBanner/>
                 <TabBanner/>
                 <TabBanner/>

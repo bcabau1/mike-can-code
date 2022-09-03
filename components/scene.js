@@ -14,8 +14,8 @@ export function Model() {
     meshref.current.rotation.y = Math.sin(clock.getElapsedTime()/2)/2
   })
 
-  const materials = useLoader(MTLLoader, "/monu1.mtl");
-  const obj = useLoader(OBJLoader, "/monu1.obj", (loader) => {
+  const materials = useLoader(MTLLoader, "/racer-0.mtl");
+  const obj = useLoader(OBJLoader, "/racer-0.obj", (loader) => {
     materials.preload();
     loader.setMaterials(materials);
   });
@@ -23,7 +23,7 @@ export function Model() {
   console.log(obj);
   return (
     <mesh ref={meshref}>
-      <primitive object={obj} scale={.275} position={[0,-1,0]}/>
+       <primitive object={obj} scale={.8} position={[0,-2.65,0]}/>
     </mesh> 
     )
   
