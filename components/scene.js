@@ -31,7 +31,7 @@ export function Model() {
 
 export default function Scene() {
   return (
-        <Box position='relative' w='100%' h = 'calc(125px + 20vw)' >
+        <Box position='relative' w='100%' h = 'calc(125px + 20vw)'>
           <Canvas >
             <ambientLight/>
             <Suspense fallback={null}>

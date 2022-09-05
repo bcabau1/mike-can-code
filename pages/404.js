@@ -8,9 +8,11 @@ export default function NotFound() {
     <Container position='relative' h='100%' maxW='100%'>
       <Flex position='relative' w = '100%' h='100vh' align='center'>
         <Box position='relative' w='100% ' align="center">
-          <Heading w='100%' position='relative' as="h1" >404, page nowhere to be seen...</Heading>
-            <NextLink href="/" passHref position='relative'>
-              applesauce
+          <Heading w='100%' position='relative' as="h1" variant='banner-title' my='30px'>404, page nowhere to be seen...</Heading>
+            <NextLink href='/'>
+                <Button display='block' margin='auto' borderRadius='full' w='calc(12% + 100px)' bg={useColorModeValue('#ff8e3c', '#7f5af0')} fontFamily='heading'>
+                            <Text as='h3' fontSize='calc(10px + .5vw)'> Return home. </Text>
+                </Button>
             </NextLink>
         </Box>
         </Flex>
