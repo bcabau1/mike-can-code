@@ -12,7 +12,7 @@ export default function Page(router) {
                 <Box position='relative' w = '100%'>
                     <Box display={{md:'flex'}}>
                         <Box flexGrow={1}>
-                            <Heading as="h1" variant="section-title" textAlign='center' lineHeight='75px'>
+                            <Heading as="h1" variant="section-title" textAlign='center' lineHeight='80px'>
                                 Michael Cabau
                             </Heading>
                             <Heading pl='10px' as="h3" mt='4vh' textAlign='center' variant="sub-title">Software engineer, game developer, and car enthusiest</Heading>
@@ -38,12 +38,12 @@ export default function Page(router) {
                     </NextLink>
                 </Box>
                 <Box p='5%'>
-                    <NextLink href='/projects'>
+                    <NextLink href='/education'>
                         <a><TabBanner/></a>
                     </NextLink>
                 </Box>
                 <Box p='5%'>
-                    <NextLink href='/contact'>
+                    <NextLink href='/projects'>
                         <a><TabBanner/></a>
                     </NextLink>
                 </Box>

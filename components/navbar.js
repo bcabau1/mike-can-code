@@ -74,11 +74,11 @@ export default function Navbar(props) {
           <LinkItem href="/experience" path={path}>
             <Text>Experience</Text>
           </LinkItem>
+          <LinkItem href="/education" path={path}>
+            <Text >Education</Text>
+          </LinkItem>
           <LinkItem href="/projects" path={path}>
             <Text >Projects</Text>
-          </LinkItem>
-          <LinkItem href="/contact" path={path}>
-            <Text >Contact Me</Text>
           </LinkItem>
         </Stack>
 
@@ -99,11 +99,11 @@ export default function Navbar(props) {
                 <NextLink href="/experience" passHref>
                   <MenuItem as={Link}>Experience</MenuItem>
                 </NextLink>
+                <NextLink href="/education" passHref>
+                  <MenuItem as={Link}>Education</MenuItem>
+                </NextLink>
                 <NextLink href="/projects" passHref>
                   <MenuItem as={Link}>Projects</MenuItem>
-                </NextLink>
-                <NextLink href="/contact" passHref>
-                  <MenuItem as={Link}>Contact Me</MenuItem>
                 </NextLink>
               </MenuList>
             </Menu>
