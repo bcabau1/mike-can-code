@@ -2,11 +2,14 @@ import { Box, Flex, useColorModeValue } from "@chakra-ui/react"
 import { motion } from 'framer-motion'
 
 
+export default function TabBanner(props) {
 
-export default function TabBanner() {
+    const clickHandle = () => {
+        window.location.href = props.href;
+      }
 
     return (
-            <Box as={motion.div} 
+            <Box as={motion.div}
             position='relative' 
             w='calc(125px + 6vw)' 
             h='calc(125px + 6vw)' 
@@ -16,6 +19,7 @@ export default function TabBanner() {
             transition='0.1s linear'
             initial={{ y: 5, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
+            onClick={clickHandle}
             >
 
             </Box>

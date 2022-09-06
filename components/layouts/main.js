@@ -8,7 +8,7 @@ export default function Main({children, router})  {
         <Box as="main" pb={8}>
             <Head>
                 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-                <title>Mike Can Code - Home</title>
+                <title>Michael Cabau - Home</title>
             </Head>
             <Navbar path={router.aspath}/>
             <Box maxW="100vw">

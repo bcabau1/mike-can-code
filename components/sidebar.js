@@ -8,7 +8,7 @@ import { AiFillLinkedin } from "react-icons/ai";
 
 
 export default function Sidebar()   {
-
+    
     return (
         <Box position='fixed' transform={'translateX(0)'} h='100%' w='20%'>
             <Flex position='relative' w = '100%' h='100%' align='center'  >  
@@ -18,19 +18,21 @@ export default function Sidebar()   {
                     <IconButton mx='4px'
                     size='lg'
                     isRound={true}
-                    aria-label="change theme"
+                    aria-label="github"
                     variant="ghost"
                     colorScheme={useColorModeValue('gray', 'gray')}
                     icon={<Icon as={GoMarkGithub} h='25px' w='25px'/>}
+                    onClick={() => document.location.href = 'https://github.com/bcabau1'}
                     ></IconButton>
 
                     <IconButton mx='4px'
                     size='lg'
                     isRound={true}
-                    aria-label="change theme"
+                    aria-label="linked-in"
                     variant="ghost"
                     colorScheme={useColorModeValue('gray', 'gray')}
                     icon={<Icon as={AiFillLinkedin} h='25px' w='25px'/>}
+                    onClick={() => document.location.href = 'https://www.linkedin.com/in/brian-cabau-91525b197'}
                     ></IconButton>
 
                     <IconButton mx='4px'
@@ -40,6 +42,7 @@ export default function Sidebar()   {
                     variant="ghost"
                     colorScheme={useColorModeValue('gray', 'gray')}
                     icon={<Icon as={EmailIcon} h='25px' w='25px'/>}
+                    onClick={() => window.open('mailto:bmcabaudev@gmail.com')}
                     ></IconButton>                  
                 </Box>
             </Flex>
