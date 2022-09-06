@@ -15,7 +15,7 @@ export default function Sidebar()   {
                 <Box position='relative' w = '100%' align='center' >
                     <Scene/>
                     
-                    <IconButton mx='4px'
+                    <IconButton m='5px'
                     size='lg'
                     isRound={true}
                     aria-label="github"
@@ -25,7 +25,7 @@ export default function Sidebar()   {
                     onClick={() => document.location.href = 'https://github.com/bcabau1'}
                     ></IconButton>
 
-                    <IconButton mx='4px'
+                    <IconButton m='5px'
                     size='lg'
                     isRound={true}
                     aria-label="linked-in"
@@ -35,7 +35,7 @@ export default function Sidebar()   {
                     onClick={() => document.location.href = 'https://www.linkedin.com/in/brian-cabau-91525b197'}
                     ></IconButton>
 
-                    <IconButton mx='4px'
+                    <IconButton m='5px'
                     size='lg'
                     isRound={true}
                     aria-label="change theme"

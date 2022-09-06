@@ -5,11 +5,11 @@ import styled from '@emotion/styled'
 
 const NavBox = styled.span`
   font-weight: bold;
-  font-size: 20px;
+  font-size: 22px;
   display: inline-flex;
   align-items: center;
-  height: 30px;
   line-height: 20px;
+  height: 8px;
   padding: 10px;
 `
 
