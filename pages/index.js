@@ -33,13 +33,13 @@ export default function Page(router) {
                      You should definitely check out my...
                 </Heading>
                 <Box p='5%'>
-                    <TabBanner href='/experience'/>
+                    <TabBanner imgsrc='/images/briefcase.png' href='experience' name='Experience'/>
                 </Box>
                 <Box p='5%'>
-                    <TabBanner href='/education'/>
+                    <TabBanner imgsrc='/images/graduation-hat.png' href='education' name='Education'/>
                 </Box>
                 <Box p='5%'>
-                    <TabBanner href='/projects'/>
+                    <TabBanner imgsrc='/images/pencil.png' href='projects' name='Projects'/>
                 </Box>
             </Flex>
         </Container>    

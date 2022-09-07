@@ -1,6 +1,6 @@
 import {Box, Flex} from "@chakra-ui/layout"
 import Scene from "./scene"
-import { Icon, IconButton, useColorModeValue } from '@chakra-ui/react'
+import { Icon, IconButton, useColorModeValue, Center } from '@chakra-ui/react'
 import { EmailIcon } from '@chakra-ui/icons'
 import { GoMarkGithub } from "react-icons/go";
 import { AiFillLinkedin } from "react-icons/ai";
@@ -43,7 +43,7 @@ export default function Sidebar()   {
                     colorScheme={useColorModeValue('gray', 'gray')}
                     icon={<Icon as={EmailIcon} h='25px' w='25px'/>}
                     onClick={() => window.open('mailto:bmcabaudev@gmail.com')}
-                    ></IconButton>                  
+                    ></IconButton>
                 </Box>
             </Flex>
         </Box>

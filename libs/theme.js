@@ -10,7 +10,7 @@ const styles = {
       bg: mode('#eff0f3', '#16161a')(props),
     },
     p:{
-      color: mode('#2d334a', 'white')(props)
+      color: mode('#2a2a2a', 'white')(props)
     }
   })
 }
@@ -18,7 +18,7 @@ const styles = {
 const components = {
   Heading: {
     baseStyle: props => ({
-        color: mode('#272343', '#fffffe')(props)
+        color: mode('#0d0d0d', '#fffffe')(props)
       }),
     variants: {
       'section-title': {
@@ -26,11 +26,11 @@ const components = {
       },
       'sub-title': props => ({
         fontSize: 'calc(14px + 1vw)',
-        color: mode('#2d334a', '#94a1b2')(props)
+        color: mode('#2a2a2a', '#94a1b2')(props)
       }),
       'banner-title': props => ({
         fontSize: 'calc(20px + 1vw)',
-        color: mode('#272343', '#fffffe')(props)
+        color: mode('#0d0d0d', '#fffffe')(props)
       })
     }
   },

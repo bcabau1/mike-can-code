@@ -10,7 +10,7 @@ export default function NotFound() {
         <Box position='relative' w='100% ' align="center">
           <Heading w='100%' position='relative' as="h1" variant='banner-title' my='30px'>404, page nowhere to be seen...</Heading>
             <NextLink href='/'>
-                <Button display='block' margin='auto' borderRadius='full' w='calc(12% + 100px)' bg={useColorModeValue('#ff8e3c', '#7f5af0')} fontFamily='heading'>
+                <Button display='block' margin='auto' borderRadius='full' w='calc(12% + 100px)' bg={useColorModeValue('#8bd3dd', '#2cb67d')} fontFamily='heading'>
                             <Text as='h3' fontSize='calc(10px + .5vw)'> Return home. </Text>
                 </Button>
             </NextLink>
