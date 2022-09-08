@@ -12,12 +12,13 @@ import {
   MenuList,
   MenuButton,
   IconButton,
-  useColorModeValue
+  useColorModeValue,
+  Text
 } from '@chakra-ui/react'
 import { HamburgerIcon } from '@chakra-ui/icons'
 import ToggleTheme from './toggletheme'
 
-const LinkItem = ({ href, path, target, children, ...props }) => {
+export const LinkItem = ({ href, path, target, children, ...props }) => {
   const active = path === href
   const inactiveColor = useColorModeValue('#2d334a', '#b8c1ec')
   return (
@@ -43,26 +44,26 @@ export default function Navbar(props) {
       position="fixed"
       as="nav"
       w="100%"
-      //bg={useColorModeValue('#ffffff40', '#20202380')}
-      css={{ backdropFilter: 'blur(10px)' }}
-      zIndex={2}
+      bg={useColorModeValue('#fffffe', '#242629')}
+      //css={{ backdropFilter: 'blur(10px)' }}
+      zIndex={99}
       {...props}
     >
       <Container
         display="flex"
         p={2}
-        maxW="container.xl"
+        maxW="container.2xl"
         wrap="wrap"
         align="center"
         justify="space-between"
       >
-        <Flex align="center" mr={5}>
+        <Flex align="center" mr={10}>
           <Heading as="h1" size="lg" letterSpacing={'tighter'}>
             <NavBarTitle/>
           </Heading>
         </Flex>
 
-        <Stack
+        <Stack fontFamily='heading'
           direction={{ base: 'column', md: 'row' }}
           display={{ base: 'none', md: 'flex' }}
           width={{ base: 'full', md: 'auto' }}
@@ -70,14 +71,14 @@ export default function Navbar(props) {
           flexGrow={1}
           mt={{ base: 4, md: 0 }}
         >
-          <LinkItem href="/projects" path={path}>
-            Projects
+          <LinkItem href="experience" path={path}>
+            <Text>Experience</Text>
           </LinkItem>
-          <LinkItem href="/posts" path={path}>
-            Posts
+          <LinkItem href="education" path={path}>
+            <Text >Education</Text>
           </LinkItem>
-          <LinkItem href="/contact" path={path}>
-            Contact Me
+          <LinkItem href="projects" path={path}>
+            <Text >Projects</Text>
           </LinkItem>
         </Stack>
 
@@ -86,23 +87,24 @@ export default function Navbar(props) {
           <Box ml={2} display={{ base: 'inline-block', md: 'none' }}>
             <Menu isLazy id="navbar-menu">
               <MenuButton
+                size='lg'
                 as={IconButton}
                 icon={<HamburgerIcon />}
                 variant="ghost"
                 aria-label="Options"
               />
-              <MenuList>
+              <MenuList >
                 <NextLink href="/" passHref>
                   <MenuItem as={Link}>About</MenuItem>
                 </NextLink>
-                <NextLink href="/projects" passHref>
+                <NextLink href="experience" passHref>
+                  <MenuItem as={Link}>Experience</MenuItem>
+                </NextLink>
+                <NextLink href="education" passHref>
+                  <MenuItem as={Link}>Education</MenuItem>
+                </NextLink>
+                <NextLink href="projects" passHref>
                   <MenuItem as={Link}>Projects</MenuItem>
-                </NextLink>
-                <NextLink href="/posts" passHref>
-                  <MenuItem as={Link}>Posts</MenuItem>
-                </NextLink>
-                <NextLink href="/contact" passHref>
-                  <MenuItem as={Link}>Contact Me</MenuItem>
                 </NextLink>
               </MenuList>
             </Menu>

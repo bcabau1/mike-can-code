@@ -7,6 +7,8 @@ export default function ToggleTheme() {
 
   return (
         <IconButton
+          isRound={true}
+          size='lg'
           aria-label="change theme"
           variant="ghost"
           colorScheme={useColorModeValue('gray', 'gray')}

@@ -5,17 +5,17 @@ import styled from '@emotion/styled'
 
 const NavBox = styled.span`
   font-weight: bold;
-  font-size: 18px;
+  font-size: 22px;
   display: inline-flex;
   align-items: center;
-  height: 30px;
   line-height: 20px;
+  height: 8px;
   padding: 10px;
 `
 
 const NavBarTitle = () => {
   return (
-    <Link href="/" scroll={false}>
+    <Link href="/#intro" scroll={false}>
       <a>
         <NavBox>
           <Text
@@ -24,7 +24,7 @@ const NavBarTitle = () => {
             fontWeight="bold"
             ml={3}
           >
-            {"{ MikeCanCode }"}
+            {"Michael Cabau"}
           </Text>
         </NavBox>
       </a>
