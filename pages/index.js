@@ -1,9 +1,8 @@
-import { Container, Box, Heading, Flex, Divider, useColorModeValue, Stack } from "@chakra-ui/react"
+import { Container, Box, Heading, Flex, Divider, useColorModeValue, Text } from "@chakra-ui/react"
 import SnippetBio from "../components/snippetbio"
 import ButtonBar from "../components/buttonbar"
 import TabBanner from "../components/tabbanner"
-import NextLink from 'next/link'
-
+import AttributeFooter from "../components/footer"
 
 export default function Page(router) {
     return (
@@ -20,7 +19,7 @@ export default function Page(router) {
                     </Box>
                     <SnippetBio>
                         Hello, I'm Mike!
-                        I am a software engineer and indie game developer working remotely in Atlanta, Georgia.
+                        I am a software engineer working remotely in Atlanta, Georgia.
                         Automotive design and transportation are subjects I am interested in currently. My personal projects are motivated by topics I stumble upon, which
                         provide me with a new engineering challenge and a way to express myself creatively.
                     </SnippetBio>
@@ -28,11 +27,11 @@ export default function Page(router) {
                     <ButtonBar>Learn more about me.</ButtonBar>
                 </Box>
             </Flex>
-            <Flex position='relative' w = '100%' h='100%' align='center' flexWrap='wrap' justify='center' id='banners' overflow='auto' py='12.5%' px='12.5%' justifyContent='space-evenly'>
+            <Flex position='relative' w = '100%' h='100%' align='center' flexWrap='wrap' justify='center' id='banners' overflow='auto' p='10%'  justifyContent='space-evenly'>
                 <Heading  w='100%' as="h3" mt='4vh' textAlign='center' variant="banner-title">
                      You should definitely check out my...
                 </Heading>
-                <Box p='5%'>
+                <Box p='5%' >
                     <TabBanner imgsrc='/images/briefcase.png' href='/experience' name='Experience' path={router.aspath}/>
                 </Box>
                 <Box p='5%'>
@@ -42,6 +41,7 @@ export default function Page(router) {
                     <TabBanner imgsrc='/images/pencil.png' href='/projects' name='Projects' path={router.aspath}/>
                 </Box>
             </Flex>
+            <AttributeFooter/>
         </Container>    
     )
 }
