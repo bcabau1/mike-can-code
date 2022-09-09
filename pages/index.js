@@ -33,13 +33,13 @@ export default function Page(router) {
                      You should definitely check out my...
                 </Heading>
                 <Box p='5%'>
-                    <TabBanner imgsrc='/images/briefcase.png' href='experience' name='Experience'/>
+                    <TabBanner imgsrc='/images/briefcase.png' href='/experience' name='Experience' path={router.aspath}/>
                 </Box>
                 <Box p='5%'>
-                    <TabBanner imgsrc='/images/graduation-hat.png' href='education' name='Education'/>
+                    <TabBanner imgsrc='/images/graduation-hat.png' href='/education' name='Education' path={router.aspath}/>
                 </Box>
                 <Box p='5%'>
-                    <TabBanner imgsrc='/images/pencil.png' href='projects' name='Projects'/>
+                    <TabBanner imgsrc='/images/pencil.png' href='/projects' name='Projects' path={router.aspath}/>
                 </Box>
             </Flex>
         </Container>    
