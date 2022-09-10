@@ -117,7 +117,7 @@ export default function Navbar(props) {
           <Box ml={2} display={{ base: 'inline-block', lg: 'none' }}>
             <Menu isLazy id="navbar-menu">
               <MenuButton
-                size='lg'
+                size='md'
                 as={IconButton}
                 icon={<HamburgerIcon />}
                 variant="ghost"

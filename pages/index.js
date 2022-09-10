@@ -27,17 +27,17 @@ export default function Page(router) {
                     <ButtonBar>Learn more about me.</ButtonBar>
                 </Box>
             </Flex>
-            <Flex position='relative' w = '100%' h='100%' py='14%' px='10%' textAlign='center' flexWrap='wrap' id='banners' overflow='auto' alignItems='center' justifyContent='center'>
+            <Flex position='relative' w = '100%' h='100%' py='14%' px='14%' textAlign='center' flexWrap='wrap' id='banners' overflow='auto' alignItems='center' justifyContent='space-evenly'>
                 <Heading  w='100%' as="h3" variant="banner-title">
                      You should definitely check out my...
                 </Heading>
-                <Box px='5%'>
+                <Box px='4%'>
                     <TabBanner imgsrc='/images/graduation-hat.png' href='/education' name='Education' path={router.aspath}/>
                 </Box>
-                <Box px='5%' >
+                <Box px='4%' >
                     <TabBanner imgsrc='/images/briefcase.png' href='/experience' name='Experience' path={router.aspath}/>
                 </Box>
-                <Box px='5%'>
+                <Box px='4%'>
                     <TabBanner imgsrc='/images/pencil.png' href='/projects' name='Projects' path={router.aspath}/>
                 </Box>
             </Flex>
