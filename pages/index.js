@@ -7,7 +7,7 @@ import AttributeFooter from "../components/footer"
 export default function Page(router) {
     return (
         <Container h='100%' maxW="100%" >
-            <Flex position='relative' w = '100%' h='100%' align='center' overflow='auto' >
+            <Flex position='relative' w = '100%' h='100%' align='center' justifyContent='center' overflow='auto' >
                 <Box position='relative' w = '100%'>
                     <Box display={{md:'flex'}}>
                         <Box flexGrow={1}>
@@ -27,21 +27,21 @@ export default function Page(router) {
                     <ButtonBar>Learn more about me.</ButtonBar>
                 </Box>
             </Flex>
-            <Flex position='relative' w = '100%' h='100%' align='center' flexWrap='wrap' justify='center' id='banners' overflow='auto' p='10%'  justifyContent='space-evenly'>
-                <Heading  w='100%' as="h3" mt='4vh' textAlign='center' variant="banner-title">
+            <Flex position='relative' w = '100%' h='100%' p='12%' textAlign='center' flexWrap='wrap' justify='center' id='banners' overflow='auto' alignItems='center' justifyContent='center'>
+                <Heading  w='100%' as="h3" variant="banner-title">
                      You should definitely check out my...
                 </Heading>
-                <Box p='5%' >
-                    <TabBanner imgsrc='/images/briefcase.png' href='/experience' name='Experience' path={router.aspath}/>
-                </Box>
-                <Box p='5%'>
+                <Box px='5%'>
                     <TabBanner imgsrc='/images/graduation-hat.png' href='/education' name='Education' path={router.aspath}/>
                 </Box>
-                <Box p='5%'>
+                <Box px='5%' >
+                    <TabBanner imgsrc='/images/briefcase.png' href='/experience' name='Experience' path={router.aspath}/>
+                </Box>
+                <Box px='5%'>
                     <TabBanner imgsrc='/images/pencil.png' href='/projects' name='Projects' path={router.aspath}/>
                 </Box>
             </Flex>
-            <AttributeFooter/>
+            <AttributeFooter>© 2022 Brian Cabau. All Rights Reserved. Icons created by IwitoStudio - Flaticon</AttributeFooter>
         </Container>    
     )
 }

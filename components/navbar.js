@@ -71,11 +71,11 @@ export default function Navbar(props) {
           flexGrow={1}
           mt={{ base: 4, md: 0 }}
         >
-          <LinkItem href="experience" path={path}>
-            <Text>Experience</Text>
-          </LinkItem>
           <LinkItem href="education" path={path}>
             <Text >Education</Text>
+          </LinkItem>
+          <LinkItem href="experience" path={path}>
+            <Text>Experience</Text>
           </LinkItem>
           <LinkItem href="projects" path={path}>
             <Text >Projects</Text>
