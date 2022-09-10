@@ -11,10 +11,10 @@ export default function Page(router) {
                 <Box position='relative' w = '100%'>
                     <Box display={{md:'flex'}}>
                         <Box flexGrow={1}>
-                            <Heading as="h1" variant="section-title" textAlign='center' lineHeight='80px'>
+                            <Heading as="h1" variant="section-title" textAlign='center' lineHeight='100px'>
                                 Michael Cabau
                             </Heading>
-                            <Heading pl='10px' as="h3" mt='4vh' textAlign='center' variant="sub-title">Software engineer, game developer, and car enthusiest</Heading>
+                            <Heading pl='10px' as="h3" mt='5vh' textAlign='center' variant="sub-title">Software engineer, game developer, and car enthusiest</Heading>
                         </Box>
                     </Box>
                     <SnippetBio>
@@ -23,7 +23,7 @@ export default function Page(router) {
                         Automotive design and transportation are subjects I am interested in currently. My personal projects are motivated by topics I stumble upon, which
                         provide me with a new engineering challenge and a way to express myself creatively.
                     </SnippetBio>
-                    <Divider bg={useColorModeValue('#272343','#94a1b2')} h='1px' borderRadius='full' w='75%' display='block' margin='auto'/>
+                    <Divider bg={useColorModeValue('#272343','#94a1b2')} h='1px' borderRadius='full' w='90%' display='block' margin='auto'/>
                     <ButtonBar>Learn more about me.</ButtonBar>
                 </Box>
             </Flex>
