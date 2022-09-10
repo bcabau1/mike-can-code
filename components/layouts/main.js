@@ -11,14 +11,12 @@ export default function Main({children, router})  {
                 <title>Michael Cabau - Home</title>
             </Head>
             <Navbar path={router.aspath}/>
-            <Box maxW="100vw">
-                <Box w={'18%'} h={'100%'} ml='0' variant='side-bar'>
-                    <Sidebar/>
-                </Box>
-                <Box w="80%" h='100vh' float='right' ml='20%' pt='14' variant='main-content' id='intro'>
+            <Container maxW="container.xl">
+                
+                <Box w="100%" h='100vh' pt='14' variant='main-content' id='intro'>
                     {children}
                 </Box>
-            </Box>
+            </Container>
         </Box>
     )
 }

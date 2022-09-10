@@ -52,7 +52,7 @@ export default function Navbar(props) {
       <Container
         display="flex"
         p={2}
-        maxW="container.2xl"
+        maxW="container.xl"
         wrap="wrap"
         align="center"
         justify="space-between"

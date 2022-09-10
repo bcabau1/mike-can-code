@@ -27,7 +27,7 @@ export default function Page(router) {
                     <ButtonBar>Learn more about me.</ButtonBar>
                 </Box>
             </Flex>
-            <Flex position='relative' w = '100%' h='100%' p='12%' textAlign='center' flexWrap='wrap' justify='center' id='banners' overflow='auto' alignItems='center' justifyContent='center'>
+            <Flex position='relative' w = '100%' h='100%' py='14%' px='10%' textAlign='center' flexWrap='wrap' id='banners' overflow='auto' alignItems='center' justifyContent='center'>
                 <Heading  w='100%' as="h3" variant="banner-title">
                      You should definitely check out my...
                 </Heading>
