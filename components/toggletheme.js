@@ -11,7 +11,7 @@ export default function ToggleTheme() {
           size='md'
           aria-label="change theme"
           variant="ghost"
-          colorScheme={useColorModeValue('cyan','green')}
+          colorScheme={useColorModeValue('cyan','whatsapp')}
           icon={useColorModeValue(<MoonIcon />, <SunIcon />)}
           onClick={toggleColorMode}
         ></IconButton>
