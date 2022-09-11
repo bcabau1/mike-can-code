@@ -11,10 +11,10 @@ export default function Page(router) {
                 <Box position='relative' w = '100%'>
                     <Box display={{md:'flex'}}>
                         <Box flexGrow={1}>
-                            <Heading as="h1" variant="section-title" textAlign='center' lineHeight='100px'>
+                            <Heading as="h1" variant="section-title" textAlign='center' >
                                 Michael Cabau
                             </Heading>
-                            <Heading pl='10px' as="h3" mt='5vh' textAlign='center' variant="sub-title">Software engineer, game developer, and car enthusiest</Heading>
+                            <Heading pl='10px' as="h3" mt='1vh' textAlign='center' variant="sub-title">Software engineer, game developer, and car enthusiest</Heading>
                         </Box>
                     </Box>
                     <SnippetBio>

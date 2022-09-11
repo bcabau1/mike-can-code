@@ -122,6 +122,7 @@ export default function Navbar(props) {
                 icon={<HamburgerIcon />}
                 variant="ghost"
                 aria-label="Options"
+                isRound={true}
               />
               <MenuList >
                 <NextLink href="/" passHref>
