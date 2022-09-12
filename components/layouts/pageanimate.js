@@ -1,18 +1,29 @@
 import { motion } from 'framer-motion'
-import React from 'react'
+import { Container } from '@chakra-ui/react'
+import { StyledDiv } from '../card'
 
 
-const PageAnimate = ({ children }) => {
-  return (
-    <motion.article
-      initial={{ opacity: 0, x: 0, y: 30 }}
-      animate={{ opacity: 1, x: 0, y: 0 }}
-      exit={{ opacity: 0, x: -0, y: 30 }}
-      transition={{ duration: .75, type: 'easeinOut' }}
+export default function PageAnimate({children}) {
+
+    
+    const variants = {
+        hidden: { opacity: 0, x: 0, y: 20 },
+        enter: { opacity: 1, x: 0, y: 0 },
+        exit: { opacity: 0, x: -0, y: 20 },
+      }
+    
+    return (
+    <Container as={StyledDiv}
+      position='relative'
+      maxW='100%'
+      h='100%'
+      initial='hidden'
+      animate='enter'
+      exit='exit'
+      variants={variants}
+      transition= {{ duration: .75, type: 'easeinOut' }}
     >
-      <React.Fragment>{children}</React.Fragment>
-    </motion.article>
+      {children}
+    </Container>
   )
 }
-
-export default PageAnimate
