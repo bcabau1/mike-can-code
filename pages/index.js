@@ -29,10 +29,10 @@ export default function Page(router) {
                     <ButtonBar>Learn more about me.</ButtonBar>
                 </Box>
             </Flex>
-            <Flex position='relative' w = '100%' h='100%' py='14%' px='14%' textAlign='center' flexWrap='wrap' id='banners' overflow='auto' alignItems='center' justifyContent='space-evenly'>
+            <Flex position='relative' w = '100%' h='100%' p='14%' textAlign='center' flexWrap='wrap' id='banners' overflow='auto' alignItems='center' justifyContent='space-evenly'>
 
                 <Heading  w='100%' as="h3" variant="banner-title">
-                     You should definitely check out my...
+                     You can find out more about my...
                 </Heading>
                 <Box px='4%'>
                     <TabBanner imgsrc='/images/graduation-hat.png' href='/education' name='Education' path={router.aspath}/>
