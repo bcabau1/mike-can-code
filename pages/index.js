@@ -4,6 +4,7 @@ import ButtonBar from "../components/buttonbar"
 import TabBanner from "../components/tabbanner"
 import AttributeFooter from "../components/footer"
 import PageAnimate from "../components/layouts/pageanimate"
+import TitleLoop from "../components/titleloop"
 
 
 export default function Page(router) {
@@ -12,10 +13,8 @@ export default function Page(router) {
             <Flex position='relative' w = '100%' h='100%' align='center' justifyContent='center' overflow='auto' >
                 <Box position='relative' w = '100%'>
                     <Box display={{md:'flex'}}>
-                        <Box flexGrow={1}>
-                            <Heading as="h1" variant="section-title" textAlign='center' >
-                                Michael Cabau
-                            </Heading>
+                        <Box flexGrow={1} overflowX='hidden'>
+                        <Heading as="h1" variant="section-title" textAlign='center' >Michael Cabau</Heading>
                             <Heading pl='10px' as="h3" mt='1vh' textAlign='center' variant="sub-title">Software engineer, game developer, and car enthusiest</Heading>
                         </Box>
                     </Box>
@@ -29,7 +28,7 @@ export default function Page(router) {
                     <ButtonBar>Learn more about me.</ButtonBar>
                 </Box>
             </Flex>
-            <Flex position='relative' w = '100%' h='100%' p='14%' textAlign='center' flexWrap='wrap' id='banners' overflow='auto' alignItems='center' justifyContent='space-evenly'>
+            <Flex position='relative' w = '100%' h='100%' p='12%' textAlign='center' flexWrap='wrap' id='banners' overflow='auto' alignItems='center' justifyContent='space-evenly' >
 
                 <Heading  w='100%' as="h3" variant="banner-title">
                      You can find out more about my...
