@@ -28,19 +28,19 @@ export default function Page(router) {
                     <ButtonBar>Learn more about me.</ButtonBar>
                 </Box>
             </Flex>
-            <Flex position='relative' w = '100%' h='100%' p='12%' textAlign='center' flexWrap='wrap' id='banners' overflow='auto' alignItems='center' justifyContent='space-evenly' >
+            <Flex position='relative' w = '100%' h='100%' p='13.5%' textAlign='center' flexWrap='wrap' id='banners' overflow='auto' alignItems='center' justifyContent='space-evenly' >
 
                 <Heading  w='100%' as="h3" variant="banner-title">
                      You can find out more about my...
                 </Heading>
                 <Box px='4%'>
-                    <TabBanner imgsrc='/images/graduation-hat.png' href='/education' name='Education' path={router.aspath}/>
+                    <TabBanner imgsrc='/images/graduation-hat.png' href='education/#ed' name='Education' path={router.aspath}/>
                 </Box>
                 <Box px='4%' >
-                    <TabBanner imgsrc='/images/briefcase.png' href='/experience' name='Experience' path={router.aspath}/>
+                    <TabBanner imgsrc='/images/briefcase.png' href='experience/#exp' name='Experience' path={router.aspath}/>
                 </Box>
                 <Box px='4%'>
-                    <TabBanner imgsrc='/images/pencil.png' href='/projects' name='Projects' path={router.aspath}/>
+                    <TabBanner imgsrc='/images/pencil.png' href='projects/#proj' name='Projects' path={router.aspath}/>
                 </Box>
             </Flex>
             <AttributeFooter>© 2022 Brian Cabau. All Rights Reserved. Icons created by IwitoStudio - Flaticon</AttributeFooter>

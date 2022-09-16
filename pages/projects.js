@@ -9,7 +9,7 @@ export default function Projects(router)  {
 
     return (
         <PageAnimate>
-            <Flex position='relative' w = '100%' h='100%'  textAlign='center' flexWrap='wrap' id='banners' overflow='auto' alignItems='center' justifyContent='space-evenly'>
+            <Flex position='relative' w = '100%' h='100%'  textAlign='center' flexWrap='wrap' id='proj' overflow='auto' alignItems='center' justifyContent='space-evenly'>
 
                 <Heading  w='100%' as="h3" variant="banner-title">
                     Projects

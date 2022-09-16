@@ -74,13 +74,13 @@ export default function Navbar(props) {
           flexGrow={1}
           mt={{ base: 4, md: 0 }}
         >
-          <LinkItem href="education" path={path}>
+          <LinkItem href="education/#ed" path={path}>
             <Text >Education</Text>
           </LinkItem>
-          <LinkItem href="experience" path={path}>
+          <LinkItem href="experience/#exp" path={path}>
             <Text>Experience</Text>
           </LinkItem>
-          <LinkItem href="projects" path={path}>
+          <LinkItem href="projects/#proj" path={path}>
             <Text >Projects</Text>
           </LinkItem>
         </Stack>
@@ -128,13 +128,13 @@ export default function Navbar(props) {
                 <NextLink href="/" passHref>
                   <MenuItem as={Link}>About</MenuItem>
                 </NextLink>
-                <NextLink href="experience" passHref>
+                <NextLink href="experience/#exp" passHref>
                   <MenuItem as={Link}>Experience</MenuItem>
                 </NextLink>
-                <NextLink href="education" passHref>
+                <NextLink href="education/#ed" passHref>
                   <MenuItem as={Link}>Education</MenuItem>
                 </NextLink>
-                <NextLink href="projects" passHref>
+                <NextLink href="projects/#proj" passHref>
                   <MenuItem as={Link}>Projects</MenuItem>
                 </NextLink>
               </MenuList>

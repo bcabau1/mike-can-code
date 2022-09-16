@@ -9,7 +9,8 @@ export default function Education(router)  {
 
     return (
         <PageAnimate>
-            <Flex position='relative' w = '100%' h='100%' p='14%' textAlign='center' flexWrap='wrap' id='banners' overflow='auto' alignItems='center' justifyContent='space-evenly'>
+            <Flex position='relative' w = '100%' h='100%' p='14%' textAlign='center' flexWrap='wrap'
+            overflow='auto' alignItems='center' justifyContent='space-evenly' id='ed'>
 
                 <Heading  w='100%' as="h3" variant="banner-title">
                     Education

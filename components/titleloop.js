@@ -21,8 +21,8 @@ let items = [
 ]
 
 const variants = {
-    initial:{ x: 0, opacity: 1 },
-    animate:{ x: 500, opacity: 0,
+    initial:{ x: 500, opacity: 0 },
+    animate:{ x: 0, opacity: 1,
         transition: { duration: 1, delay: 3, repeatType: 'loop' }
     },
     exit: { x: -500, opacity: 0}
@@ -44,7 +44,7 @@ export default function TitleLoop() {
         exit='exit'
         transition='transition'
         variants={variants}
-        //onAnimationComplete={() => setCurrentItem(currentItem === 0 ? 1 : 0)}
+        onAnimationComplete={() => setCurrentItem(currentItem === 0 ? 1 : 0)}
         > 
         {items[currentItem].src}
         </motion.div>
