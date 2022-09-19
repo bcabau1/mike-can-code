@@ -7,7 +7,7 @@ export default function ProjectBanner(props) {
             <Flex
             key={props.id}
             w='600px' 
-            h='200px' 
+            h='150px' 
             m='4'  
             justify='center'
             align='center'
@@ -15,16 +15,14 @@ export default function ProjectBanner(props) {
             bg={useColorModeValue('#fffffe', '#242629')} 
             boxShadow={useColorModeValue('lg', 'dark-lg')} 
             >
-                <Flex position='relative' w='15%' h='100%' border='1px solid white'>
-
+                <Flex position='relative' w='10%' h='100%' >
+                    
                 </Flex>
-                <Flex position='relative' w='85%' h='100%' border='1px solid white'>
-                    <Flex position='relative' w='100%' h='20%' marginBottom='auto' marginTop='auto' border='1px solid white'>
-
+                <Flex position='relative' w='90%' h='100%' >
+                    <Flex position='relative' w='100%' h='20%'  >
+                        {props.summary}
                     </Flex>
-                    <Flex position='relative' w='100%' h='15%' border='1px solid white'>
-
-                    </Flex>
+                    
                 </Flex>
             
             </Flex>
