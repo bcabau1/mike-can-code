@@ -3,17 +3,18 @@ import SnippetBio from "../components/snippetbio"
 import ButtonBar from "../components/buttonbar"
 import TabBanner from "../components/tabbanner"
 import AttributeFooter from "../components/footer"
+import PageAnimate from "../components/layouts/pageanimate"
+import TitleLoop from "../components/titleloop"
+
 
 export default function Page(router) {
     return (
-        <Container h='100%' maxW="100%" >
+        <PageAnimate>
             <Flex position='relative' w = '100%' h='100%' align='center' justifyContent='center' overflow='auto' >
                 <Box position='relative' w = '100%'>
                     <Box display={{md:'flex'}}>
-                        <Box flexGrow={1}>
-                            <Heading as="h1" variant="section-title" textAlign='center' >
-                                Michael Cabau
-                            </Heading>
+                        <Box flexGrow={1} overflowX='hidden'>
+                        <Heading as="h1" variant="section-title" textAlign='center' >Michael Cabau</Heading>
                             <Heading pl='10px' as="h3" mt='1vh' textAlign='center' variant="sub-title">Software engineer, game developer, and car enthusiest</Heading>
                         </Box>
                     </Box>
@@ -27,21 +28,22 @@ export default function Page(router) {
                     <ButtonBar>Learn more about me.</ButtonBar>
                 </Box>
             </Flex>
-            <Flex position='relative' w = '100%' h='100%' py='14%' px='14%' textAlign='center' flexWrap='wrap' id='banners' overflow='auto' alignItems='center' justifyContent='space-evenly'>
+            <Flex position='relative' w = '100%' h='100%' p='13.5%' textAlign='center' flexWrap='wrap' id='banners' overflow='auto' alignItems='center' justifyContent='space-evenly' >
+
                 <Heading  w='100%' as="h3" variant="banner-title">
-                     You should definitely check out my...
+                     You can find out more about my...
                 </Heading>
                 <Box px='4%'>
-                    <TabBanner imgsrc='/images/graduation-hat.png' href='/education' name='Education' path={router.aspath}/>
+                    <TabBanner imgsrc='/images/graduation-hat.png' href='education/#ed' name='Education' path={router.aspath}/>
                 </Box>
                 <Box px='4%' >
-                    <TabBanner imgsrc='/images/briefcase.png' href='/experience' name='Experience' path={router.aspath}/>
+                    <TabBanner imgsrc='/images/briefcase.png' href='experience/#exp' name='Experience' path={router.aspath}/>
                 </Box>
                 <Box px='4%'>
-                    <TabBanner imgsrc='/images/pencil.png' href='/projects' name='Projects' path={router.aspath}/>
+                    <TabBanner imgsrc='/images/pencil.png' href='projects/#proj' name='Projects' path={router.aspath}/>
                 </Box>
             </Flex>
             <AttributeFooter>© 2022 Brian Cabau. All Rights Reserved. Icons created by IwitoStudio - Flaticon</AttributeFooter>
-        </Container>    
+        </PageAnimate>   
     )
 }

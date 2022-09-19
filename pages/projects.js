@@ -1,10 +1,22 @@
 import Timeline from "../components/timeline"
+import PageAnimate from "../components/layouts/pageanimate"
+import { Heading, Box, Flex } from "@chakra-ui/react"
+import AttributeFooter from "../components/footer"
 
 
 export default function Projects(router)  {
 
 
     return (
-        <Timeline/>
+        <PageAnimate>
+            <Flex position='relative' w = '100%' h='100%'  textAlign='center' flexWrap='wrap' id='proj' overflow='auto' alignItems='center' justifyContent='space-evenly'>
+
+                <Heading  w='100%' as="h3" variant="banner-title">
+                    Projects
+                </Heading>
+                
+            </Flex>
+            <AttributeFooter>© 2022 Brian Cabau. All Rights Reserved. Icons created by IwitoStudio - Flaticon</AttributeFooter>
+        </PageAnimate>   
     )
 }
