@@ -2,19 +2,58 @@ import Timeline from "../components/timeline"
 import PageAnimate from "../components/layouts/pageanimate"
 import { Heading, Box, Flex } from "@chakra-ui/react"
 import AttributeFooter from "../components/footer"
+import ProjectBanner from "../components/projectbanner"
+import SnippetBio from "../components/snippetbio"
 
+
+
+const projects = 
+[   
+    {
+        id: 'portfolio',
+        stack: `JavaScript, React, NextJS`,
+        description: `Portfolio Website`,
+        repoLink: ''
+    },
+    {
+        id: 'barterup',
+        stack: `Php, MySQL`,
+        description: `BarterUp: Item Trading Auction`,
+        repoLink: ''
+    },
+    {
+        id: 'laser-marker',
+        stack: `Python, NumPy, Matplotlib`,
+        description: `Laser marking physics simulation of mirror galvanometer.`,
+        repoLink: ''
+    }
+]
+
+const ProjectCards = ({projects}) => {
+
+    const projArr =  projects.map(project => {
+        return <ProjectBanner key={project.id} href={project.repoLink} summary={project.description}/>
+
+    })
+
+    return projArr
+
+
+}
 
 export default function Projects(router)  {
 
-
     return (
         <PageAnimate>
-            <Flex position='relative' w = '100%' h='100%'  textAlign='center' flexWrap='wrap' id='proj' overflow='auto' alignItems='center' justifyContent='space-evenly'>
-
-                <Heading  w='100%' as="h3" variant="banner-title">
+            <Flex position='relative' w = '100%' textAlign='center' flexWrap='wrap' overflow='auto' alignItems='center' justifyContent='space-evenly' py='6%'>
+                <Heading  w='100%' as="h3" variant="tab-title" id='proj'>
                     Projects
                 </Heading>
-                
+                <SnippetBio>
+                        My personal projects are motivated by topics I stumble upon, which
+                        provide me with a new engineering challenge and a way to express myself creatively.
+                    </SnippetBio>
+                {<ProjectCards projects={projects}/>}
             </Flex>
             <AttributeFooter>© 2022 Brian Cabau. All Rights Reserved. Icons created by IwitoStudio - Flaticon</AttributeFooter>
         </PageAnimate>   

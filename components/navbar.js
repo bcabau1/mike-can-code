@@ -50,6 +50,7 @@ export default function Navbar(props) {
       bg={useColorModeValue('#fffffe', '#242629')}
       //css={{ backdropFilter: 'blur(10px)' }}
       zIndex={99}
+      boxShadow={'sm'}
       {...props}
     >
       <Container
@@ -74,13 +75,13 @@ export default function Navbar(props) {
           flexGrow={1}
           mt={{ base: 4, md: 0 }}
         >
-          <LinkItem href="education/#ed" path={path}>
+          <LinkItem href="education/#intro" path={path}>
             <Text >Education</Text>
           </LinkItem>
-          <LinkItem href="experience/#exp" path={path}>
+          <LinkItem href="experience/#intro" path={path}>
             <Text>Experience</Text>
           </LinkItem>
-          <LinkItem href="projects/#proj" path={path}>
+          <LinkItem href="projects/#intro" path={path}>
             <Text >Projects</Text>
           </LinkItem>
         </Stack>
@@ -88,7 +89,7 @@ export default function Navbar(props) {
         <Box flex={1} align="right">
           <IconButton 
                       size='md'
-                      isRound={true}
+                      //isRound={true}
                       aria-label="github"
                       variant="ghost"
                       colorScheme={useColorModeValue('gray', 'gray')}
@@ -97,7 +98,7 @@ export default function Navbar(props) {
           ></IconButton>
           <IconButton
                       size='md'
-                      isRound={true}
+                      //isRound={true}
                       aria-label="linked-in"
                       variant="ghost"
                       colorScheme={useColorModeValue('gray', 'gray')}
@@ -106,7 +107,7 @@ export default function Navbar(props) {
           ></IconButton>
           <IconButton mr={6}
                       size='md'
-                      isRound={true}
+                      //isRound={true}
                       aria-label="change theme"
                       variant="ghost"
                       colorScheme={useColorModeValue('gray', 'gray')}
@@ -122,19 +123,19 @@ export default function Navbar(props) {
                 icon={<HamburgerIcon />}
                 variant="ghost"
                 aria-label="Options"
-                isRound={true}
+                //isRound={true}
               />
               <MenuList >
                 <NextLink href="/" passHref>
                   <MenuItem as={Link}>About</MenuItem>
                 </NextLink>
-                <NextLink href="experience/#exp" passHref>
+                <NextLink href="experience/#intro" passHref>
                   <MenuItem as={Link}>Experience</MenuItem>
                 </NextLink>
-                <NextLink href="education/#ed" passHref>
+                <NextLink href="education/#intro" passHref>
                   <MenuItem as={Link}>Education</MenuItem>
                 </NextLink>
-                <NextLink href="projects/#proj" passHref>
+                <NextLink href="projects/#intro" passHref>
                   <MenuItem as={Link}>Projects</MenuItem>
                 </NextLink>
               </MenuList>

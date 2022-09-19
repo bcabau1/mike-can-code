@@ -31,7 +31,11 @@ const components = {
       'banner-title': props => ({
         fontSize: 'calc(18px + 1vw)',
         color: mode('#0d0d0d', '#fffffe')(props)
-      })
+      }),
+      'tab-title': props => ({
+        fontSize: 'calc(52px + 1vw)',
+        color: mode('#0d0d0d', '#fffffe')(props)
+      }),
     }
   },
   Link: {
