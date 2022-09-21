@@ -18,8 +18,7 @@ export default function Page(router) {
                             <Heading mr='3' as="h3" mt='1vh' textAlign='left' variant="sub-title">Software engineer, game developer, and car enthusiest</Heading>
                         </Box>
                     </Flex>
-                    <Divider bg={useColorModeValue('#272343','#a2a1b2')} h='calc(250px + 10vw)' w='1px' borderRadius='full' orientation='vertical' display='block' margin='auto'/>
-                    <Flex w='50%' align='center' justify='center'>
+                    <Flex w='50%' align='center' justify='center' bg={useColorModeValue('#fffffe', '#242629')} borderRadius='xl' boxShadow={useColorModeValue('lg', 'dark-lg')}>
                     <SnippetBio>
                         Hello, I'm Mike!
                         I am a software engineer working remotely in Atlanta, Georgia.

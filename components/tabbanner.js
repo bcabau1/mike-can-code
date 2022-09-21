@@ -25,7 +25,7 @@ export default function TabBanner(props) {
             transformTemplate={template}
             w='calc(125px + 5vw)' 
             h='calc(125px + 5vw)' 
-            borderRadius='lg' 
+            borderRadius='xl' 
             bg={useColorModeValue('#fffffe', '#242629')}  
             whileHover={{ scale: 1.15}}
             whileTap={{scale: 0.8}}
