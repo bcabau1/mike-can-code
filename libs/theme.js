@@ -22,10 +22,10 @@ const components = {
       }),
     variants: {
       'section-title': {
-        fontSize: 'calc(24px + 6.5vw)',
+        fontSize: 'calc(70px + 4vw)',
       },
       'sub-title': props => ({
-        fontSize: 'calc(18px + 1vw)',
+        fontSize: 'calc(20px + 1vw)',
         color: mode('#2a2a2a', '#94a1b2')(props)
       }),
       'banner-title': props => ({
