@@ -12,10 +12,10 @@ export default function Page(router) {
         <PageAnimate>
             <Flex position='relative' w = '100%' h='100%' align='center' justifyContent='center' overflow='auto'>
                 <Flex position='relative' w = '100%' h='100%' align='center' justifyContent='center' overflow='auto' flexWrap={'wrap'}>
-                    <Flex w='600px' align='center' justify='center' p='3'>
+                    <Flex w='600px' align='center' justify='center'>
                         <Box flexGrow={1} overflowX='hidden'>
                         <Heading as="h1" variant="section-title" textAlign='left' >Michael Cabau</Heading>
-                            <Heading mr='3' as="h3" mt='1vh' textAlign='left' variant="sub-title">Software engineer, game developer, and car enthusiest</Heading>
+                            <Heading  as="h3" mt='1.5vh' textAlign='left' variant="sub-title">Software engineer, game developer, and car enthusiest</Heading>
                         </Box>
                     </Flex>
                     <Flex w='600px' align='center' justify='center' bg={useColorModeValue('#fffffe', '#242629')} borderRadius='xl' boxShadow={useColorModeValue('lg', 'dark-lg')}>

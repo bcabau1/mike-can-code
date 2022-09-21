@@ -1,15 +1,11 @@
-import Timeline from "../components/timeline"
 import PageAnimate from "../components/layouts/pageanimate"
-import { Heading, Box, Flex, Image } from "@chakra-ui/react"
+import { Accordion, AccordionItem, AccordionButton, AccordionPanel, AccordionIcon, Heading, Box, Flex } from "@chakra-ui/react"
 import AttributeFooter from "../components/footer"
-import ProjectBanner from "../components/projectbanner"
-import SnippetBio from "../components/snippetbio"
 
 
 
-const projects = 
-[   
-    {
+
+const projects = [{
         id: 'portfolio',
         stack: `JavaScript, React, NextJS`,
         description: `Portfolio Website`,
@@ -26,18 +22,29 @@ const projects =
         stack: `Python, NumPy, Matplotlib`,
         description: `Laser marking physics simulation of mirror galvanometer.`,
         repoLink: ''
-    }
-]
+    }]
 
 const ProjectCards = ({projects}) => {
 
-    const projArr =  projects.map(project => {
-        return <ProjectBanner key={project.id} href={project.repoLink} summary={project.description}/>
-
-    })
-
-    return projArr
-
+    return (
+    
+    <Accordion>
+        {projects.map(project => {
+            return  (<AccordionItem>
+            <h2>
+            <AccordionButton>
+                <Box flex='1' textAlign='left'>
+                {project.description}
+                </Box>
+                <AccordionIcon />
+            </AccordionButton>
+            </h2>
+            <AccordionPanel pb={4}>
+                {project.description}
+            </AccordionPanel>
+        </AccordionItem>)
+        })}
+    </Accordion>)
 
 }
 

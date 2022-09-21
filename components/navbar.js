@@ -116,7 +116,7 @@ export default function Navbar(props) {
           ></IconButton>
           <ToggleTheme />
           <Box ml={2} display={{ base: 'inline-block', lg: 'none' }}>
-            <Menu isLazy id="navbar-menu">
+            <Menu isLazy id="navbar-menu" >
               <MenuButton
                 size='md'
                 as={IconButton}
@@ -125,18 +125,18 @@ export default function Navbar(props) {
                 aria-label="Options"
                 //isRound={true}
               />
-              <MenuList >
+              <MenuList bg={useColorModeValue('#fffffe', '#242629')} fontFamily='heading'>
                 <NextLink href="/" passHref>
-                  <MenuItem as={Link}>About</MenuItem>
+                  <MenuItem as={Link}><Text >About</Text></MenuItem>
                 </NextLink>
                 <NextLink href="experience/#intro" passHref>
-                  <MenuItem as={Link}>Experience</MenuItem>
+                  <MenuItem as={Link}><Text>Experience</Text></MenuItem>
                 </NextLink>
                 <NextLink href="education/#intro" passHref>
-                  <MenuItem as={Link}>Education</MenuItem>
+                  <MenuItem as={Link}><Text>Education</Text></MenuItem>
                 </NextLink>
                 <NextLink href="projects/#intro" passHref>
-                  <MenuItem as={Link}>Projects</MenuItem>
+                  <MenuItem as={Link}><Text>Projects</Text></MenuItem>
                 </NextLink>
               </MenuList>
             </Menu>
