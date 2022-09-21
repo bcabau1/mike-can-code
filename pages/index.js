@@ -15,7 +15,7 @@ export default function Page(router) {
                     <Flex w='50%' align='center' justify='center' p='3'>
                         <Box flexGrow={1} overflowX='hidden'>
                         <Heading as="h1" variant="section-title" textAlign='left' >Michael Cabau</Heading>
-                            <Heading pl='10px' as="h3" mt='1vh' textAlign='left' variant="sub-title">Software engineer, game developer, and car enthusiest</Heading>
+                            <Heading mr='3' as="h3" mt='1vh' textAlign='left' variant="sub-title">Software engineer, game developer, and car enthusiest</Heading>
                         </Box>
                     </Flex>
                     <Divider bg={useColorModeValue('#272343','#a2a1b2')} h='calc(250px + 10vw)' w='1px' borderRadius='full' orientation='vertical' display='block' margin='auto'/>
