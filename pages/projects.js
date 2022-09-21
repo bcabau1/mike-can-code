@@ -28,7 +28,7 @@ const ProjectCards = ({projects}) => {
 
     return (
     
-    <Accordion>
+    <Accordion allowToggle>
         {projects.map(project => {
             return  (<AccordionItem>
             <h2>
@@ -52,11 +52,12 @@ export default function Projects(router)  {
 
     return (
         <PageAnimate>
-            <Flex position='relative' w = '100%' textAlign='center' flexWrap='wrap' overflow='auto' alignItems='center' justifyContent='space-evenly' py='6%'>
-                <Heading  w='100%' as="h3" variant="tab-title" id='proj' mb='10'>
+            <Flex position='relative' w = '100%' h='100%' textAlign='center' flexWrap='wrap' overflow='auto' alignItems='center' justifyContent='center' py='6%'>
+                <Heading  w='50%' as="h3" variant="tab-title" id='proj' mb='10' textAlign={'left'}>
                     Projects
                 </Heading>
                 {<ProjectCards projects={projects}/>}
+                
             </Flex>
             <AttributeFooter>© 2022 Brian Cabau. All Rights Reserved. Icons created by IwitoStudio - Flaticon</AttributeFooter>
         </PageAnimate>   

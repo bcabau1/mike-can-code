@@ -1,6 +1,5 @@
 import Link from 'next/link'
-import Image from 'next/image'
-import { Text, useColorModeValue } from '@chakra-ui/react'
+import { Text, useColorModeValue, Image } from '@chakra-ui/react'
 import styled from '@emotion/styled'
 
 const NavBox = styled.span`
@@ -8,7 +7,7 @@ const NavBox = styled.span`
   font-size: 22px;
   display: inline-flex;
   align-items: center;
-  line-height: 20px;
+  line-height: 36px;
   height: 8px;
   padding: 10px;
 `

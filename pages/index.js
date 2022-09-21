@@ -18,13 +18,15 @@ export default function Page(router) {
                             <Heading  as="h3" mt='1.5vh' textAlign='left' variant="sub-title">Software engineer, game developer, and car enthusiest</Heading>
                         </Box>
                     </Flex>
-                    <Flex w='600px' align='center' justify='center' bg={useColorModeValue('#fffffe', '#242629')} borderRadius='xl' boxShadow={useColorModeValue('lg', 'dark-lg')}>
-                    <SnippetBio>
-                        Hello, I'm Mike!
-                        I am a software engineer working remotely in Atlanta, Georgia.
-                        My personal projects are motivated by topics I stumble upon, which
-                        provide me with a new engineering challenge and a way to express myself creatively.
-                    </SnippetBio>
+                    <Flex w='600px' align='center' justify='center'>
+                        <Flex position='relative' w='100%' bg={useColorModeValue('#fffffe', '#242629')} borderRadius='2xl' boxShadow={useColorModeValue('lg', 'dark-lg')}>
+                        <SnippetBio>
+                            Hello, I'm Mike!
+                            I am a software engineer working remotely in Atlanta, Georgia.
+                            My personal projects are motivated by topics I stumble upon, which
+                            provide me with a new engineering challenge and a way to express myself creatively.
+                        </SnippetBio>
+                        </Flex>
                     </Flex>
                 </Flex>
             </Flex>
