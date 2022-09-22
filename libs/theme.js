@@ -26,7 +26,7 @@ const components = {
       },
       'sub-title': props => ({
         fontSize: 'calc(20px + 1vw)',
-        color: mode('#2a2a2a', '#94a1b2')(props)
+        color: mode('#242629', '#94a1b2')(props)
       }),
       'banner-title': props => ({
         fontSize: 'calc(18px + 1vw)',

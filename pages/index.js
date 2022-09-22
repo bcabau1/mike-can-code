@@ -12,7 +12,7 @@ export default function Page(router) {
         <PageAnimate>
             <Flex position='relative' w = '100%' h='100%' align='center' justifyContent='center' overflow='auto'>
                 <Flex position='relative' w = '100%' h='100%' align='center' justifyContent='center' overflow='auto' flexWrap={'wrap'}>
-                    <Flex w='600px' align='center' justify='center'>
+                    <Flex w='600px' align='center' justify='center' pr={6}>
                         <Box flexGrow={1} overflowX='hidden'>
                         <Heading as="h1" variant="section-title" textAlign='left' >Michael Cabau</Heading>
                             <Heading  as="h3" mt='1.5vh' textAlign='left' variant="sub-title">Software engineer, game developer, and car enthusiest</Heading>
