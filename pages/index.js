@@ -20,12 +20,7 @@ export default function Page(router) {
                     </Flex>
                     <Flex w='600px' align='center' justify='center'>
                         <Flex position='relative' w='100%' bg={useColorModeValue('#fffffe', '#242629')} borderRadius='2xl' boxShadow={useColorModeValue('lg', 'dark-lg')}>
-                        <SnippetBio>
-                            Hello, I'm Mike!
-                            I am a software engineer working remotely in Atlanta, Georgia.
-                            My personal projects are motivated by topics I stumble upon, which
-                            provide me with a new engineering challenge and a way to express myself creatively.
-                        </SnippetBio>
+                        <SnippetBio/>
                         </Flex>
                     </Flex>
                 </Flex>
