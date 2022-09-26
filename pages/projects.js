@@ -17,7 +17,8 @@ const projects = [{
         id: 1,
         title: 'BarterUp - Item Trading Auction',
         stack: `Php, MySQL`,
-        description: `BarterUp: Item Trading Auction`,
+        description: `A web application where users can trade or bid between real-world items among one another. 
+                        The product was built using PHP and MySQL.`,
         repoLink: 'https://github.com/bcabau1/BarterUp'
     },
     {
@@ -31,7 +32,8 @@ const projects = [{
         id: 3,
         title: 'EZ Car Rentals',
         stack: `Php, MySQL`,
-        description: `Laser marking physics simulation of mirror galvanometer.`,
+        description: `A car rental web app where users can get estimates, rent, and return cars. 
+                     The product was developed using PHP, SQL, and the PayPal API.`,
         repoLink: 'https://github.com/bcabau1/Car-Rental-Web-App'
     }
 ]
@@ -65,7 +67,7 @@ export default function Projects(router)  {
                 <Flex w='100%'  flexWrap='wrap' overflow='auto' alignItems='center' justifyContent='center' fontFamily='snippit'>
                     <Heading w='100%' as="h3" variant="tab-title" id='proj' mb='6' textAlign={'left'}>
                     <Text textAlign='left' lineHeight='1.5em'>Projects</Text>
-                    <Divider bg={useColorModeValue('#8bd3dd', '#2cb67d')} w='calc(300px + 3vw)' h='4px' borderRadius='full' orientation='horizontal' />
+                    <Divider bg={useColorModeValue('#8bd3dd', '#2cb67d')} w='calc(300px + 3vw)' h='8px' borderRadius='full' orientation='horizontal' />
                     </Heading>
                     {<ProjectCards projects={projects}/>}
                 </Flex>

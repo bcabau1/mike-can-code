@@ -22,14 +22,14 @@ const components = {
       }),
     variants: {
       'section-title': {
-        fontSize: 'calc(70px + 4vw)',
+        fontSize: 'calc(72px + 4vw)',
       },
       'sub-title': props => ({
         fontSize: 'calc(20px + 1vw)',
-        color: mode('#242629', '#94a1b2')(props)
+        color: mode('#72757e', '#94a1b2')(props)
       }),
       'banner-title': props => ({
-        fontSize: 'calc(18px + 1vw)',
+        fontSize: 'calc(20px + 1vw)',
         color: mode('#0d0d0d', '#fffffe')(props)
       }),
       'tab-title': props => ({
