@@ -48,7 +48,6 @@ export default function Navbar(props) {
       as="nav"
       w="100%"
       bg={useColorModeValue('#fffffe', '#242629')}
-      //css={{ backdropFilter: 'blur(10px)' }}
       zIndex={99}
       boxShadow={'sm'}
       {...props}

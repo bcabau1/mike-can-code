@@ -25,7 +25,7 @@ export default function TabBanner(props) {
             transformTemplate={template}
             w='calc(125px + 5vw)' 
             h='calc(125px + 5vw)' 
-            borderRadius='2xl' 
+            borderRadius='xl' 
             bg={useColorModeValue('#fffffe', '#242629')}  
             whileHover={{ scale: 1.15}}
             whileTap={{scale: 0.8}}
@@ -38,7 +38,7 @@ export default function TabBanner(props) {
             boxShadow={useColorModeValue('lg', 'dark-lg')}
             >
               <Center><Image src={imgsrc} boxSize='calc(100px + 3.5vw)'></Image></Center>
-              <Center><Text fontFamily='snippit' fontSize='calc(10px + .5vw)'>{name}</Text></Center>
+              <Center><Text fontFamily='snippit' fontSize='calc(13px + .25vw)'>{name}</Text></Center>
             </Box>
       </LinkItem>
     )

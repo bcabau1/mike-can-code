@@ -6,6 +6,7 @@ import AttributeFooter from "../components/footer"
 
 export default function Experience(router)  {
 
+    const dividerLength = `calc(40px * ${'Experience'.length})`
 
     return (
         <PageAnimate>
@@ -13,7 +14,7 @@ export default function Experience(router)  {
                 <Flex w='100%'  flexWrap='wrap' overflow='auto' alignItems='center' justifyContent='center' fontFamily='snippit'>
                     <Heading w='100%' as="h3" variant="tab-title" id='proj' mb='6' textAlign={'left'}>
                     <Text textAlign='left' lineHeight='1.5em'>Experience</Text>
-                    <Divider bg={useColorModeValue('#8bd3dd', '#2cb67d')} w='calc(300px + 3vw)' h='8px' borderRadius='full' orientation='horizontal' />
+                    <Divider bg={useColorModeValue('#8bd3dd', '#2cb67d')} w={dividerLength} h='8px' borderRadius='full' orientation='horizontal' />
                     </Heading>
                 </Flex>
                 

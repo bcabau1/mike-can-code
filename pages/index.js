@@ -12,20 +12,20 @@ export default function Page(router) {
         <PageAnimate>
             <Flex position='relative' w = '100%' h='100%' align='center' justifyContent='center' overflow='auto'>
                 <Flex position='relative' w = '100%' h='100%' align='center' justifyContent='center' overflow='auto' flexWrap={'wrap'}>
-                    <Flex w='600px' align='center' justify='center' pr={6}>
+                    <Flex w='600px' align='center' justify='left' pr={6}>
                         <Box flexGrow={1} overflowX='hidden'>
-                        <Heading as="h1" variant="section-title" textAlign='left' >Michael Cabau</Heading>
+                        <Heading as="h1" variant="section-title" textAlign='left' lineHeight='1.1em'>Michael Cabau</Heading>
                             <Heading  as="h3" mt='1.5vh' textAlign='left' variant="sub-title">Software engineer, game developer, and car enthusiest</Heading>
                         </Box>
                     </Flex>
                     <Flex w='600px' align='center' justify='center'>
-                        <Flex position='relative' w='100%' bg={useColorModeValue('#fffffe', '#242629')} borderRadius='2xl' boxShadow={useColorModeValue('lg', 'dark-lg')}>
+                        <Flex position='relative' w='100%' bg={useColorModeValue('#fffffe', '#242629')} borderRadius='xl' boxShadow={useColorModeValue('lg', 'dark-lg')}>
                         <SnippetBio/>
                         </Flex>
                     </Flex>
                 </Flex>
             </Flex>
-            <Flex position='relative' w = '100%' h='100%' p='13.5%' textAlign='center' flexWrap='wrap' id='banners' overflow='auto' alignItems='center' justifyContent='space-evenly' >
+            <Flex position='relative' w = '100%' h='100%' px='13.5%' p='13.5%' textAlign='center' flexWrap='wrap' id='banners' overflow='auto' alignItems='center' justifyContent='center' >
 
                 <Heading  w='100%' as="h3" variant="banner-title">
                      You can find out more about my...
