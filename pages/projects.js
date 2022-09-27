@@ -19,7 +19,8 @@ const projects = [{
         title: 'BarterUp - Item Trading Auction',
         stack: `Php, MySQL`,
         description: `A web application where users can trade or bid between real-world items among one another. 
-                        The product was built using PHP and MySQL.`,
+                        The product was built using PHP and MySQL. 
+                        This project was built for a senior level database course in at Georgia State University, and also involved creating a complex database schema for entity relationships.`,
         repoLink: 'https://github.com/bcabau1/BarterUp'
     },
     {
