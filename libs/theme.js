@@ -33,7 +33,7 @@ const components = {
         color: mode('#0d0d0d', '#fffffe')(props)
       }),
       'tab-title': props => ({
-        fontSize: 'calc(52px + 1vw)',
+        fontSize: 'calc(68px)',
         color: mode('#0d0d0d', '#fffffe')(props)
       }),
       'project-title': props => ({

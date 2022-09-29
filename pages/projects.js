@@ -20,23 +20,18 @@ const projects = [{
         stack: `Php, MySQL`,
         description: `A web application where users can trade or bid between real-world items among one another. 
                         The product was built using PHP and MySQL. 
-                        This project was built for a senior level database course in at Georgia State University, and also involved creating a complex database schema for entity relationships.`,
+                        This project was built for a senior level database course in at Georgia State University, and also involved database design for entity relationships.`,
         repoLink: 'https://github.com/bcabau1/BarterUp'
     },
     {
         id: 2,
         title: 'Laser Marking Physics Simulation',
         stack: `Python, NumPy, Matplotlib`,
-        description: `Laser marking physics simulation of mirror galvanometer.`,
+        description: `A Laser marking physics simulation of a mirror galvanometer using Python and matplotlib, 
+                        developed at Georgia State University and advised by Dr. Sidong Lei. 
+                        This project demonstrates laser beams on fluctuating mirror angles
+                         to produce patterns in micron-scale for laser-scanning systems and printers.`,
         repoLink: 'https://github.com/bcabau1/Physics-AM-Project'
-    },
-    {
-        id: 3,
-        title: 'EZ Car Rentals',
-        stack: `Php, MySQL`,
-        description: `A car rental web app where users can get estimates, rent, and return cars. 
-                     The product was developed using PHP, SQL, and the PayPal API.`,
-        repoLink: 'https://github.com/bcabau1/Car-Rental-Web-App'
     }
 ]
 
