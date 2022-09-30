@@ -9,7 +9,7 @@ export default function Experience(router)  {
     const dividerLength = `calc(40px * ${'Experience'.length})`
 
     return (
-        <PageAnimate>
+        <PageAnimate title='Experience'>
             <Flex position='relative' w = '100%' h='100%' textAlign='center' flexWrap='wrap' overflow='auto' alignItems='center' justifyContent='center' py='6%'>
                 <Flex w='100%'  flexWrap='wrap' overflow='auto' alignItems='center' justifyContent='center' fontFamily='snippit'>
                     <Heading w='100%' as="h3" variant="tab-title" id='proj' mb='6' textAlign={'left'}>

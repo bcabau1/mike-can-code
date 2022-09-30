@@ -1,4 +1,4 @@
-import { Box, Flex, useColorModeValue, Text, Link } from "@chakra-ui/react"
+import { Box, Flex, useColorModeValue, Text, Link, TagLeftIcon } from "@chakra-ui/react"
 import { ExternalLinkIcon } from '@chakra-ui/icons'
 import {SiJavascript, SiReact, SiChakraui, SiFramer, SiNextdotjs, SiPhp, SiMysql, SiPython, SiNumpy, SiLabview} from 'react-icons/si'
 
@@ -19,8 +19,8 @@ const iconpairs = {
 export default function ProjectBanner(props) {
 
     return (            
-            <Flex m='4' w='1000px' minH='175px'  justify='center' textAlign='left' >
-                <Flex position='relative' w='100%' p='2'    flexDir='column'>
+            <Flex m='4' w='1000px' minH='175px'  justify={{base: 'left', sm:'center'}} textAlign='left' flexDir='row' flexWrap={'wrap'}>
+                <Flex position='relative' w='100%' p='2'flexDir='column'>
                     <Flex w='100%' h='80%'  align='center' justify='left' fontFamily='snippit' fontSize='18px'>
                         {props.project?.description ?? `There seems to be a problem loading that information.`}
                     </Flex>
