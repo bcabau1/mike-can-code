@@ -1,4 +1,4 @@
-import { Container, Box, Heading, Flex, Divider, useColorModeValue, Text } from "@chakra-ui/react"
+import { Container, Box, Center,Heading, Flex, Divider, useColorModeValue, Text } from "@chakra-ui/react"
 import SnippetBio from "../components/snippetbio"
 import ButtonBar from "../components/buttonbar"
 import TabBanner from "../components/tabbanner"
@@ -10,37 +10,34 @@ import TitleLoop from "../components/titleloop"
 export default function Page(router) {
     return (
         <PageAnimate>
-            <Flex position='relative' w = '100%' h='100%' align='center' justifyContent='center' overflow='auto' >
-                <Box position='relative' w = '100%'>
-                    <Box display={{md:'flex'}}>
+            <Flex position='relative' w = '100%' h='100%' align='center' justifyContent='center' overflow='auto'>
+                <Flex position='relative' w = '100%' h='100%' align='center' justifyContent='center' overflow='auto' flexWrap={'wrap'}>
+                    <Flex w='600px' align='center' justify='left' pr={6}>
                         <Box flexGrow={1} overflowX='hidden'>
-                        <Heading as="h1" variant="section-title" textAlign='center' >Michael Cabau</Heading>
-                            <Heading pl='10px' as="h3" mt='1vh' textAlign='center' variant="sub-title">Software engineer, game developer, and car enthusiest</Heading>
+                        <Heading as="h1" variant="section-title" textAlign='left' lineHeight='1.1em'>Michael Cabau</Heading>
+                            <Heading  as="h3" mt='1.5vh' textAlign='left' variant="sub-title">Software Engineer | Game Developer | Car Enthusiest</Heading>
                         </Box>
-                    </Box>
-                    <SnippetBio>
-                        Hello, I'm Mike!
-                        I am a software engineer working remotely in Atlanta, Georgia.
-                        Automotive design and transportation are subjects I am interested in currently. My personal projects are motivated by topics I stumble upon, which
-                        provide me with a new engineering challenge and a way to express myself creatively.
-                    </SnippetBio>
-                    <Divider bg={useColorModeValue('#272343','#94a1b2')} h='1px' borderRadius='full' w='90%' display='block' margin='auto'/>
-                    <ButtonBar>Learn more about me.</ButtonBar>
-                </Box>
+                    </Flex>
+                    <Flex w='600px' align='center' justify='center'>
+                        <Flex position='relative' w='100%' bg={useColorModeValue('#fffffe', '#242629')} borderRadius='xl' boxShadow={useColorModeValue('lg', 'dark-lg')}>
+                        <SnippetBio/>
+                        </Flex>
+                    </Flex>
+                </Flex>
             </Flex>
-            <Flex position='relative' w = '100%' h='100%' p='13.5%' textAlign='center' flexWrap='wrap' id='banners' overflow='auto' alignItems='center' justifyContent='space-evenly' >
+            <Flex position='relative' w = '100%' h='100%' px='13.5%' p='13.5%' textAlign='center' flexWrap='wrap' id='banners' overflow='hidden' alignItems='center' justifyContent='center' >
 
                 <Heading  w='100%' as="h3" variant="banner-title">
                      You can find out more about my...
                 </Heading>
                 <Box px='4%'>
-                    <TabBanner imgsrc='/images/graduation-hat.png' href='education/#ed' name='Education' path={router.aspath}/>
+                    <TabBanner imgsrc='/images/graduation-hat.png' href='education/#intro' name='Education' path={router.aspath}/>
                 </Box>
                 <Box px='4%' >
-                    <TabBanner imgsrc='/images/briefcase.png' href='experience/#exp' name='Experience' path={router.aspath}/>
+                    <TabBanner imgsrc='/images/briefcase.png' href='experience/#intro' name='Experience' path={router.aspath}/>
                 </Box>
                 <Box px='4%'>
-                    <TabBanner imgsrc='/images/pencil.png' href='projects/#proj' name='Projects' path={router.aspath}/>
+                    <TabBanner imgsrc='/images/pencil.png' href='projects/#intro' name='Projects' path={router.aspath}/>
                 </Box>
             </Flex>
             <AttributeFooter>© 2022 Brian Cabau. All Rights Reserved. Icons created by IwitoStudio - Flaticon</AttributeFooter>

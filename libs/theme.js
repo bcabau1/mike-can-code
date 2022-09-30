@@ -22,14 +22,22 @@ const components = {
       }),
     variants: {
       'section-title': {
-        fontSize: 'calc(64px + 4.5vw)',
+        fontSize: 'calc(70px + 4vw)',
       },
       'sub-title': props => ({
-        fontSize: 'calc(18px + 1vw)',
-        color: mode('#2a2a2a', '#94a1b2')(props)
+        fontSize: 'calc(30px + .5vw)',
+        color: mode('#72757e', '#94a1b2')(props)
       }),
       'banner-title': props => ({
-        fontSize: 'calc(18px + 1vw)',
+        fontSize: 'calc(30px + .5vw)',
+        color: mode('#0d0d0d', '#fffffe')(props)
+      }),
+      'tab-title': props => ({
+        fontSize: 'calc(68px)',
+        color: mode('#0d0d0d', '#fffffe')(props)
+      }),
+      'project-title': props => ({
+        fontSize: '20px',
         color: mode('#0d0d0d', '#fffffe')(props)
       })
     }

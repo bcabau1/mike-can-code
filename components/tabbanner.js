@@ -12,7 +12,7 @@ export default function TabBanner(props) {
       }
   */
 
-    const shadow = useColorModeValue('lg', 'dark-lg')
+//    const shadow = useColorModeValue('lg', 'dark-lg')
 
 
     function template({ scale }) {
@@ -25,7 +25,7 @@ export default function TabBanner(props) {
             transformTemplate={template}
             w='calc(125px + 5vw)' 
             h='calc(125px + 5vw)' 
-            borderRadius='lg' 
+            borderRadius='xl' 
             bg={useColorModeValue('#fffffe', '#242629')}  
             whileHover={{ scale: 1.15}}
             whileTap={{scale: 0.8}}
@@ -35,10 +35,10 @@ export default function TabBanner(props) {
             animate={{ y: 0, opacity: 1 }}
             //onClick={clickHandle}
             pt='5%'
-            boxShadow={shadow}
+            boxShadow={useColorModeValue('lg', 'dark-lg')}
             >
               <Center><Image src={imgsrc} boxSize='calc(100px + 3.5vw)'></Image></Center>
-              <Center><Text fontFamily='snippit' fontSize='calc(10px + .5vw)'>{name}</Text></Center>
+              <Center><Text fontFamily='snippit' fontSize='calc(13px + .25vw)'>{name}</Text></Center>
             </Box>
       </LinkItem>
     )

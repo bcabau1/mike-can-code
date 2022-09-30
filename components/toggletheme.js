@@ -7,11 +7,11 @@ export default function ToggleTheme() {
 
   return (
         <IconButton
-          isRound={true}
+          //isRound={true}
           size='md'
           aria-label="change theme"
           variant="ghost"
-          colorScheme={useColorModeValue('cyan','whatsapp')}
+          colorScheme={useColorModeValue('blackAlpha','yellow')}
           icon={useColorModeValue(<MoonIcon />, <SunIcon />)}
           onClick={toggleColorMode}
         ></IconButton>
