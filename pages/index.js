@@ -15,7 +15,7 @@ export default function Page(router) {
                     <Flex w='600px' align='center' justify='left' pr={6}>
                         <Box flexGrow={1} overflowX='hidden'>
                         <Heading as="h1" variant="section-title" textAlign='left' lineHeight='1.1em'>Michael Cabau</Heading>
-                            <Heading  as="h3" mt='1.5vh' textAlign='left' variant="sub-title">Software engineer, game developer, and car enthusiest</Heading>
+                            <Heading  as="h3" mt='1.5vh' textAlign='left' variant="sub-title">Software Engineer | Game Developer | Car Enthusiest</Heading>
                         </Box>
                     </Flex>
                     <Flex w='600px' align='center' justify='center'>
@@ -25,7 +25,7 @@ export default function Page(router) {
                     </Flex>
                 </Flex>
             </Flex>
-            <Flex position='relative' w = '100%' h='100%' px='13.5%' p='13.5%' textAlign='center' flexWrap='wrap' id='banners' overflow='auto' alignItems='center' justifyContent='center' >
+            <Flex position='relative' w = '100%' h='100%' px='13.5%' p='13.5%' textAlign='center' flexWrap='wrap' id='banners' overflow='hidden' alignItems='center' justifyContent='center' >
 
                 <Heading  w='100%' as="h3" variant="banner-title">
                      You can find out more about my...

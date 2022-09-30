@@ -8,25 +8,25 @@ import ProjectBanner from "../components/projectbanner"
 
 const projects = [{
         id: 0,
-        title: 'MikeCanCode - Developer Portfolio Site',
-        stack: `JavaScript, React, NextJS`,
+        title: 'Developer Portfolio',
+        stack: `react,next,chakra,framer`,
         description: `This is a developer portfolio website (which you are visiting right now!), built using React, NextJS, Chakra UI, and Framer Motion. 
                         I wanted to have a way to showcase my learning, where I have been, and where I'm going in my career; this site is the product of that.`,
         repoLink: 'https://github.com/bcabau1/mike-can-code'
     },
     {
         id: 1,
-        title: 'BarterUp - Item Trading Auction',
-        stack: `Php, MySQL`,
+        title: 'BarterUp, an Item Trading Web App',
+        stack: `php,mysql`,
         description: `A web application where users can trade or bid between real-world items among one another. 
                         The product was built using PHP and MySQL. 
-                        This project was built for a senior level database course in at Georgia State University, and also involved database design for entity relationships.`,
+                        This project was built for a senior level database course at Georgia State University, and also involved database design for entity relationships.`,
         repoLink: 'https://github.com/bcabau1/BarterUp'
     },
     {
         id: 2,
         title: 'Laser Marking Physics Simulation',
-        stack: `Python, NumPy, Matplotlib`,
+        stack: `python,numpy,labview`,
         description: `A Laser marking physics simulation of a mirror galvanometer using Python and matplotlib, 
                         developed at Georgia State University and advised by Dr. Sidong Lei. 
                         This project demonstrates laser beams on fluctuating mirror angles
@@ -36,7 +36,6 @@ const projects = [{
 ]
 
 const ProjectCards = ({projects}) => {
-
     return (<Accordion w='100%' defaultIndex={[0]} >
         {projects.map(project => {
             return  (<AccordionItem key={project.id} >
@@ -67,7 +66,7 @@ export default function Projects(router)  {
                 <Flex w='100%'  flexWrap='wrap' overflow='auto' alignItems='center' justifyContent='center' fontFamily='snippit'>
                     <Heading w='100%' as="h3" variant="tab-title" id='proj' mb='6' textAlign={'left'}>
                     <Text textAlign='left' lineHeight='1.5em'>Projects</Text>
-                    <Divider bg={useColorModeValue('#8bd3dd', '#2cb67d')} w={dividerLength} h='8px' borderRadius='full' orientation='horizontal' />
+                    <Divider bg={useColorModeValue('#8bd3dd', '#2cb67d')} w={dividerLength} h='6px' borderRadius='full' orientation='horizontal' />
                     </Heading>
                     {<ProjectCards projects={projects}/>}
                 </Flex>
