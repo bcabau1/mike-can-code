@@ -1,6 +1,6 @@
 import {Box, Flex} from "@chakra-ui/layout"
 import Scene from "./scene"
-import { Icon, IconButton, useColorModeValue, Center } from '@chakra-ui/react'
+import { Icon, IconButton, useColorModeValue } from '@chakra-ui/react'
 import { EmailIcon } from '@chakra-ui/icons'
 import { GoMarkGithub } from "react-icons/go";
 import { AiFillLinkedin } from "react-icons/ai";

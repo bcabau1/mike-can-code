@@ -1,10 +1,8 @@
-import { Container, Box, Center,Heading, Flex, Divider, useColorModeValue, Text } from "@chakra-ui/react"
+import { Box, Heading, Flex, useColorModeValue} from "@chakra-ui/react"
 import SnippetBio from "../components/snippetbio"
-import ButtonBar from "../components/buttonbar"
 import TabBanner from "../components/tabbanner"
 import AttributeFooter from "../components/footer"
 import PageAnimate from "../components/layouts/pageanimate"
-import TitleLoop from "../components/titleloop"
 
 
 export default function Page(router) {

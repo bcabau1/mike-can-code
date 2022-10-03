@@ -1,7 +1,6 @@
 import NextLink from 'next/link'
-import { Box, Heading, Text, Container, Divider, Button, Flex } from '@chakra-ui/react'
+import { Box, Heading, Text, Container, Button, Flex } from '@chakra-ui/react'
 import { useColorModeValue } from '@chakra-ui/react'
-import ButtonBar from '../components/buttonbar'
 
 export default function NotFound() {
   return (
