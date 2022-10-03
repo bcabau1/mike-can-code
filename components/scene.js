@@ -1,10 +1,9 @@
 import { Suspense} from 'react'
 import { useRef } from 'react';
 import { Canvas, useLoader, useFrame } from '@react-three/fiber'
-import { OrbitControls } from "@react-three/drei";
 import { OBJLoader } from 'three/examples/jsm/loaders/OBJLoader'
 import { MTLLoader } from 'three/examples/jsm/loaders/MTLLoader'
-import {  Box, Flex } from '@chakra-ui/layout';
+import { Box } from '@chakra-ui/layout';
 
 export function Model() {
 

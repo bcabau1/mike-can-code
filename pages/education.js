@@ -1,10 +1,9 @@
-import Timeline from "../components/timeline"
 import PageAnimate from "../components/layouts/pageanimate"
-import { Heading, Box, Flex, Divider, Text, useColorModeValue } from "@chakra-ui/react"
+import { Heading, Flex, Divider, Text, useColorModeValue } from "@chakra-ui/react"
 import AttributeFooter from "../components/footer"
 
 
-export default function Education(router)  {
+export default function Education()  {
 
     const dividerLength = `calc(40px * ${'Education'.length})`
 

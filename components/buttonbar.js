@@ -1,4 +1,4 @@
-import { Box, Button, IconButton, Icon, Text, useColorModeValue } from '@chakra-ui/react'
+import { Box, Button, Text, useColorModeValue } from '@chakra-ui/react'
 //import { BsChevronCompactDown } from "react-icons/bs";
 import NextLink from 'next/link'
 import { motion } from 'framer-motion'
