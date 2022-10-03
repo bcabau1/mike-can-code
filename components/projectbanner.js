@@ -30,7 +30,7 @@ export default function ProjectBanner(props) {
                         </Link>
                         <Flex flexDir='row' justify='space-between' >
                             {props.project?.stack.split(',').map(tool => 
-                            <Box w='18px' h='100%' color={useColorModeValue('#72757e', '#94a1b2')} key={tool} mx='1.5'>{iconpairs[tool.trim()]}</Box>)}
+                            <Box w='18px' h='100%' color='#72757e' _dark={{color:'#94a1b2' }} key={tool} mx='1.5'>{iconpairs[tool.trim()]}</Box>)}
                         </Flex> 
                     </Flex>
                 </Flex>
