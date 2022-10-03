@@ -4,7 +4,7 @@ import { useState } from "react"
 
 
 const ProfPic = () => 
-    (<Center><Image src='/images/profilepic.jpg' borderRadius='full' boxSize='225px' p='5'/></Center>)
+    (<Center><Image src='/images/profilepic.jpg' borderRadius='full' boxSize='225px' p='5' alt='no image'/></Center>)
 
 const Title = () => 
     (<Heading as="h1" variant="section-title" textAlign='center' >Michael Cabau</Heading>)

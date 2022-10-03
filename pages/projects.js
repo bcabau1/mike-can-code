@@ -1,5 +1,5 @@
 import PageAnimate from "../components/layouts/pageanimate"
-import { Accordion, AccordionItem, AccordionButton, AccordionPanel, Divider,AccordionIcon, Heading, Box, Flex, Text, Image, useColorModeValue, Center } from "@chakra-ui/react"
+import { Accordion, AccordionItem, AccordionButton, AccordionPanel, Divider,AccordionIcon, Heading, Box, Flex, Text, useColorModeValue, Center } from "@chakra-ui/react"
 import AttributeFooter from "../components/footer"
 import ProjectBanner from "../components/projectbanner"
 
@@ -35,12 +35,13 @@ const projects = [{
     }
 ]
 
+
 const ProjectCards = ({projects}) => {
     return (<Accordion w='100%' defaultIndex={[0]} >
         {projects.map(project => {
             return  (<AccordionItem key={project.id} >
             <h2>
-            <AccordionButton borderRadius='md' _expanded={{ bg: useColorModeValue('#fffffe', '#242629'), color: useColorModeValue('#2d333a','#fffffe') }}>
+            <AccordionButton borderRadius='md' bg= '#fffffe' color= '#2d333a' _dark={{ bg: '#242629', color: '#fffffe' }}>
                 <Box flex='1' textAlign='left'>
                 <Heading  w='100%' as="h3" variant="project-title" fontFamily='snippit'>
                 {project.title} </Heading>
@@ -56,7 +57,7 @@ const ProjectCards = ({projects}) => {
     </Accordion>)
 }
 
-export default function Projects(router)  {
+export default function Projects()  {
 
     const dividerLength = `calc(40px * ${'Projects'.length})`
 

@@ -37,7 +37,7 @@ export default function TabBanner(props) {
             pt='5%'
             boxShadow={useColorModeValue('lg', 'dark-lg')}
             >
-              <Center><Image src={imgsrc} boxSize='calc(100px + 3.5vw)'></Image></Center>
+              <Center><Image src={imgsrc} boxSize='calc(100px + 3.5vw)' alt='no image'></Image></Center>
               <Center><Text fontFamily='snippit' fontSize='calc(13px + .25vw)'>{name}</Text></Center>
             </Box>
       </LinkItem>

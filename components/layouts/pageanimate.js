@@ -1,4 +1,4 @@
-import { AnimatePresence, motion } from 'framer-motion'
+import { AnimatePresence } from 'framer-motion'
 import Head from 'next/head'
 import { Container } from '@chakra-ui/react'
 import { StyledDiv } from '../card'
