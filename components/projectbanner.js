@@ -1,4 +1,4 @@
-import { Box, Flex, useColorModeValue, Link} from "@chakra-ui/react"
+import { Box, Flex, Link} from "@chakra-ui/react"
 import { ExternalLinkIcon } from '@chakra-ui/icons'
 import {SiJavascript, SiReact, SiChakraui, SiFramer, SiNextdotjs, SiPhp, SiMysql, SiPython, SiNumpy, SiLabview} from 'react-icons/si'
 
