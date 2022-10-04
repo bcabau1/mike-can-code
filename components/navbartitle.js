@@ -18,7 +18,7 @@ const NavBarTitle = () => {
       <a>
         <NavBox>
         <>
-        <Image boxSize='22px' mr='1' src={useColorModeValue('images/light-icon.png','images/dark-icon.png')} alt='no image' />
+        <Image boxSize='22px' mr='1' src={useColorModeValue('./images/light-icon.png','./images/dark-icon.png')} alt='no image' />
           <Text
             color={useColorModeValue('#272343', '#fffffe')}
             fontFamily='M PLUS Rounded 1c", sans-serif'
