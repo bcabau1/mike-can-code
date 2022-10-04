@@ -16,7 +16,7 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [14.x, 16.x, 18.x]
+        node-version: 14.x
         # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
 
     steps:
@@ -35,4 +35,4 @@ jobs:
       uses: JamesIves/github-pages-deploy-action@v4.2.5
       with:
           branch: gh-pages
-          folder: build
+          folder: out
