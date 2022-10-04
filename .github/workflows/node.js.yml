@@ -30,6 +30,7 @@ jobs:
     - run: npm run prettier
     - run: npm run build
     - run: npm run export
+    - run: npm run static
     
     - name: Deploy
       uses: JamesIves/github-pages-deploy-action@v4.2.5
