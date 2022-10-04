@@ -14,7 +14,7 @@ const NavBox = styled.span`
 
 const NavBarTitle = () => {
   return (
-    <Link href="/#intro" scroll={false}>
+    <Link href="/" scroll={false}>
       <a>
         <NavBox>
         <>
