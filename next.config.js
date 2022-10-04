@@ -1,9 +1,11 @@
+const isDev = process.env.NODE_ENV !== "production"
+
 module.exports = {
     reactStrictMode: true,
     images: {
         loader: "akamai",
         path: ""
     },
-    basePath: "/mike-can-code",
-    assetPrefix: "/mike-can-code"
+    basePath: isDev ? "": "/mike-can-code",
+    assetPrefix: isDev ? "": "/mike-can-code/"
 }

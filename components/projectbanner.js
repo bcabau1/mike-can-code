@@ -4,16 +4,16 @@ import {SiJavascript, SiReact, SiChakraui, SiFramer, SiNextdotjs, SiPhp, SiMysql
 
 
 const iconpairs = {
-    'javascript' : <SiJavascript size='md'/>,
-    'react' : <SiReact size='md'/>,
-    'chakra' : <SiChakraui size='md'/>,
-    'framer' : <SiFramer size='md'/>,
-    'next' : <SiNextdotjs size='md'/>,
-    'php' : <SiPhp size='md'/>,
-    'mysql' : <SiMysql size='md'/>,
-    'python' : <SiPython size='md'/>,
-    'numpy' : <SiNumpy size='md'/>,
-    'labview' : <SiLabview size='md'/>
+    'javascript' : <SiJavascript/>,
+    'react' : <SiReact />,
+    'chakra' : <SiChakraui s/>,
+    'framer' : <SiFramer />,
+    'next' : <SiNextdotjs />,
+    'php' : <SiPhp />,
+    'mysql' : <SiMysql />,
+    'python' : <SiPython />,
+    'numpy' : <SiNumpy />,
+    'labview' : <SiLabview />
 }
 
 export default function ProjectBanner(props) {
