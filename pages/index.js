@@ -29,13 +29,13 @@ export default function Page(router) {
                      You can find out more about my...
                 </Heading>
                 <Box px='4%'>
-                    <TabBanner imgsrc='/images/graduation-hat.png' href='education/#intro' name='Education' path={router.aspath}/>
+                    <TabBanner imgsrc='images/graduation-hat.png' href='education/#intro' name='Education' path={router.aspath}/>
                 </Box>
                 <Box px='4%' >
-                    <TabBanner imgsrc='/images/briefcase.png' href='experience/#intro' name='Experience' path={router.aspath}/>
+                    <TabBanner imgsrc='images/briefcase.png' href='experience/#intro' name='Experience' path={router.aspath}/>
                 </Box>
                 <Box px='4%'>
-                    <TabBanner imgsrc='/images/pencil.png' href='projects/#intro' name='Projects' path={router.aspath}/>
+                    <TabBanner imgsrc='images/pencil.png' href='projects/#intro' name='Projects' path={router.aspath}/>
                 </Box>
             </Flex>
             <AttributeFooter>© 2022 Brian Cabau. All Rights Reserved. Icons created by IwitoStudio - Flaticon</AttributeFooter>
