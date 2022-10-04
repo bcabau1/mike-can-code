@@ -4,6 +4,6 @@ module.exports = {
         loader: "akamai",
         path: ""
     },
-    basePath: "/mike-can-code/",
+    basePath: "/mike-can-code",
     assetPrefix: "/mike-can-code/"
 }
