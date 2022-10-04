@@ -1,11 +1,13 @@
+const withImages = require('next-images')
+const withPlugins = require('next-compose-plugins')
 const isDev = process.env.NODE_ENV !== "production"
 
-module.exports = {
+module.exports = withPlugins([
+    [withImages, {
+        assetPrefix: isDev ? "": "/mike-can-code/"
+    }],
+    {
     reactStrictMode: true,
-    images: {
-        loader: "akamai",
-        path: ""
-    },
     basePath: isDev ? "": "/mike-can-code",
-    assetPrefix: isDev ? "": "/mike-can-code/"
-}
+    }
+])
