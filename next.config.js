@@ -5,5 +5,5 @@ module.exports = {
         path: ""
     },
     basePath: "/mike-can-code",
-    assetPrefix: "/mike-can-code/"
+    assetPrefix: "/mike-can-code"
 }
