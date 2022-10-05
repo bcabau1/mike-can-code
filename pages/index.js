@@ -13,7 +13,7 @@ export default function Page(router) {
                     <Flex w='600px' align='center' justify='left' pr={6}>
                         <Box flexGrow={1} overflowX='hidden'>
                         <Heading as="h1" variant="section-title" textAlign='left' lineHeight='1.1em'>Michael Cabau</Heading>
-                            <Heading  as="h3" mt='1.5vh' textAlign='left' variant="sub-title">Software Engineer | Game Developer | Car Enthusiest</Heading>
+                            <Heading  as="h3" mt='1.5vh' textAlign='left' variant="sub-title">Software Engineering | Applied Math | Car Enthusiast</Heading>
                         </Box>
                     </Flex>
                     <Flex w='600px' align='center' justify='center'>
