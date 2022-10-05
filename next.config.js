@@ -7,6 +7,7 @@ module.exports = withPlugins([
         assetPrefix: isDev ? "": "/mike-can-code/"
     }],
     {
+    trailingSlash: true,
     reactStrictMode: true,
     basePath: isDev ? "": "/mike-can-code",
     }
