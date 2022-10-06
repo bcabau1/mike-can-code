@@ -13,7 +13,7 @@ import {
   MenuButton,
   IconButton,
   useColorModeValue,
-  Text, Icon
+  Text, Icon, MenuGroup, MenuDivider
 } from '@chakra-ui/react'
 import { HamburgerIcon } from '@chakra-ui/icons'
 import ToggleTheme from './toggletheme'
@@ -69,11 +69,13 @@ export default function Navbar(props) {
         <Stack fontFamily='heading'
           direction={{ base: 'column', lg: 'row' }}
           display={{ base: 'none', lg: 'flex' }}
-          width={{ base: '50%', lg: 'auto' }}
+          width={{ base: '100%', lg: '100%' }}
           alignItems="center"
+          justify='space-between'
           flexGrow={1}
           mt={{ base: 4, md: 0 }}
         >
+          <Stack direction='row'>
           <LinkItem href="education/#intro" path={path}>
             <Text >Education</Text>
           </LinkItem>
@@ -83,9 +85,8 @@ export default function Navbar(props) {
           <LinkItem href="projects/#intro" path={path}>
             <Text >Projects</Text>
           </LinkItem>
-        </Stack>
-
-        <Box flex={1} align="right">
+          </Stack>
+          <Box>
           <IconButton 
                       size='md'
                       //isRound={true}
@@ -113,6 +114,11 @@ export default function Navbar(props) {
                       icon={<Icon as={EmailIcon} h='20px' w='20px'/>}
                       onClick={() => window.open('mailto:bmcabaudev@gmail.com')}
           ></IconButton>
+          </Box>
+        </Stack>
+
+        <Box flex={1} align="right">
+          
           <ToggleTheme />
           <Box ml={2} display={{ base: 'inline-block', lg: 'none' }}>
             <Menu isLazy id="navbar-menu" >
@@ -125,6 +131,7 @@ export default function Navbar(props) {
                 //isRound={true}
               />
               <MenuList bg={useColorModeValue('#fffffe', '#242629')} fontFamily='heading'>
+                <MenuGroup>
                 <NextLink href="/" passHref>
                   <MenuItem as={Link}><Text >About</Text></MenuItem>
                 </NextLink>
@@ -137,6 +144,39 @@ export default function Navbar(props) {
                 <NextLink href="projects/#intro" passHref>
                   <MenuItem as={Link}><Text>Projects</Text></MenuItem>
                 </NextLink>
+                </MenuGroup>
+                <MenuDivider/>
+                <MenuGroup>
+                <Flex justify='center' align='center'>
+          <IconButton 
+                      size='md'
+                      //isRound={true}
+                      aria-label="github"
+                      variant="ghost"
+                      colorScheme={useColorModeValue('gray', 'gray')}
+                      icon={<Icon as={GoMarkGithub} h='20px' w='20px'/>}
+                      onClick={() => document.location.href = 'https://github.com/bcabau1'}
+          ></IconButton>
+          <IconButton
+                      size='md'
+                      //isRound={true}
+                      aria-label="linked-in"
+                      variant="ghost"
+                      colorScheme={useColorModeValue('gray', 'gray')}
+                      icon={<Icon as={AiFillLinkedin} h='20px' w='20px'/>}
+                      onClick={() => document.location.href = 'https://www.linkedin.com/in/brian-cabau-91525b197'}
+          ></IconButton>
+          <IconButton
+                      size='md'
+                      //isRound={true}
+                      aria-label="change theme"
+                      variant="ghost"
+                      colorScheme={useColorModeValue('gray', 'gray')}
+                      icon={<Icon as={EmailIcon} h='20px' w='20px'/>}
+                      onClick={() => window.open('mailto:bmcabaudev@gmail.com')}
+          ></IconButton>
+          </Flex>
+                </MenuGroup>
               </MenuList>
             </Menu>
           </Box>

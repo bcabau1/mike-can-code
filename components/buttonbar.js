@@ -19,7 +19,7 @@ export default function ButtonBar({children}) {
         animate={{ y: 0, opacity: 1 }}
         >
             <NextLink href='#banners'>
-                <Button display='block' margin='auto' borderRadius='full' w='calc(15vw + 70px)' bg={useColorModeValue('#8bd3dd', '#2cb67d')} fontFamily='heading' >
+                <Button display='block' margin='auto' borderRadius='full' w='calc(11vw + 80px)' bg={useColorModeValue('#8bd3dd', '#2cb67d')} fontFamily='heading' >
                             <Text as='h3' fontSize='calc(8px + .5vw)'>{children}</Text>
                 </Button>
             </NextLink>
