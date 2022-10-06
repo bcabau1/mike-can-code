@@ -23,8 +23,8 @@ export default function TabBanner(props) {
       <LinkItem href={href} path={path}>
             <Box as={motion.div}
             transformTemplate={template}
-            w='calc(125px + 5vw)' 
-            h='calc(125px + 5vw)' 
+            w='calc(100px + 6vw)' 
+            h='calc(100px + 6vw)' 
             borderRadius='xl' 
             bg={useColorModeValue('#fffffe', '#242629')}  
             whileHover={{ scale: 1.15}}
@@ -37,8 +37,8 @@ export default function TabBanner(props) {
             pt='5%'
             boxShadow={useColorModeValue('lg', 'dark-lg')}
             >
-              <Center><Image src={imgsrc} boxSize='calc(100px + 3.5vw)' alt='no image'></Image></Center>
-              <Center><Text fontFamily='snippit' fontSize='calc(13px + .25vw)'>{name}</Text></Center>
+              <Center><Image src={imgsrc} boxSize='calc(75px + 5vw)' alt='no image'></Image></Center>
+              <Center><Text fontFamily='snippit' fontSize='calc(8px + .5vw)'>{name}</Text></Center>
             </Box>
       </LinkItem>
     )

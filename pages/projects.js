@@ -59,7 +59,7 @@ const ProjectCards = ({projects}) => {
 
 export default function Projects()  {
 
-    const dividerLength = `calc(40px * ${'Projects'.length})`
+    const dividerLength = `calc((1vw + 20px) * ${'Projects'.length})`
 
     return (
         <PageAnimate title='Projects'>
@@ -67,7 +67,7 @@ export default function Projects()  {
                 <Flex w='100%'  flexWrap='wrap' overflow='auto' alignItems='center' justifyContent='center' fontFamily='snippit'>
                     <Heading w='100%' as="h3" variant="tab-title" id='proj' mb='6' textAlign={'left'}>
                     <Text textAlign='left' lineHeight='1.5em'>Projects</Text>
-                    <Divider bg={useColorModeValue('#8bd3dd', '#2cb67d')} w={dividerLength} h='6px' borderRadius='full' orientation='horizontal' />
+                    <Divider bg={useColorModeValue('#8bd3dd', '#2cb67d')} w={dividerLength} h='calc(3px + .25vw)' borderRadius='full' orientation='horizontal' />
                     </Heading>
                     {<ProjectCards projects={projects}/>}
                 </Flex>
