@@ -69,7 +69,7 @@ export default function Navbar(props) {
         <Stack fontFamily='heading'
           direction={{ base: 'column', lg: 'row' }}
           display={{ base: 'none', lg: 'flex' }}
-          width={{ base: 'full', lg: 'auto' }}
+          width={{ base: '50%', lg: 'auto' }}
           alignItems="center"
           flexGrow={1}
           mt={{ base: 4, md: 0 }}
