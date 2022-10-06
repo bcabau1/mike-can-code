@@ -25,7 +25,7 @@ export default function ProjectBanner(props) {
                         {props.project?.description ?? `There seems to be a problem loading that information.`}
                     </Flex>
                     <Flex w='100%' h='20%' align='center' justify='space-between'>
-                        <Link isExternal href={props.project?.repoLink ?? '/projects/#intro'} fontFamily='heading' fontSize='calc(.5vw + 12px)' color='#72757e' _dark={{color:'#94a1b2' }} py='1'>
+                        <Link isExternal href={props.project?.repoLink ?? '/projects/#intro'} fontFamily='heading' fontSize='calc(.5vw + 10px)' color='#72757e' _dark={{color:'#94a1b2' }} py='1'>
                             See the source code. <ExternalLinkIcon ml='1' mb='1'/>
                         </Link>
                         <Flex flexDir='row' justify='space-between' >
