@@ -14,7 +14,7 @@ export default function SnippetBio()    {
     return (
         <>
         <Box minH="10px" m='6' w='100%'  >
-                <Center><Image src='images/profilepic.jpg' borderRadius='full' boxSize='calc(110px + 4vw)' mb='5' border={color} alt='no image'/></Center>
+                <Center><Image src='images/profilepic.jpg' borderRadius='full' boxSize='calc(90px + 5vw)' mb='5' border={color} alt='no image'/></Center>
                 <Text noOfLines={6} textAlign='center' fontSize='calc(14px + .25vw)' fontFamily={'snippit'} color={useColorModeValue('#2d333a','#fffffe')}>
                     {summary}
                 </Text>
