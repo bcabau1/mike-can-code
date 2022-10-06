@@ -22,7 +22,7 @@ const components = {
       }),
     variants: {
       'section-title': {
-        fontSize: 'calc(56px + 6vw)',
+        fontSize: 'calc(56px + 5vw)',
       },
       'sub-title': props => ({
         fontSize: 'calc(18px + 1vw)',
