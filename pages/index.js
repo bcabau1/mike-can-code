@@ -23,7 +23,7 @@ export default function Page(router) {
                     </Flex>
                 </Flex>
             </Flex>
-            <Flex position='relative' w = '100%' h='100%' px='13.5%' p='13.5%' textAlign='center' flexWrap='wrap' id='banners' overflow='hidden' alignItems='center' justifyContent='center' >
+            <Flex position='relative' w = '100%' h='100%' px='13.5%' p='13.5%' textAlign='center' flexWrap='wrap' id='banners' overflow='auto' alignItems='center' justifyContent='center' >
 
                 <Heading  w='100%' as="h3" variant="banner-title">
                      You can find out more about my...
