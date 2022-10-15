@@ -1,11 +1,13 @@
 import PageAnimate from "../components/layouts/pageanimate"
-import { Heading, Flex, Divider, Text, useColorModeValue } from "@chakra-ui/react"
+import { Heading, Box, Flex, Divider, Text, useColorModeValue } from "@chakra-ui/react"
 import AttributeFooter from "../components/footer"
 
 
 export default function Education()  {
 
     const dividerLength = `calc((1vw + 20px) * ${'Education'.length})`
+
+
 
 
     return (
@@ -16,6 +18,15 @@ export default function Education()  {
                     <Text textAlign='left' lineHeight='1.5em'>Education</Text>
                     <Divider bg={useColorModeValue('#8bd3dd', '#2cb67d')} w={dividerLength} h='calc(3px + .25vw)' borderRadius='full' orientation='horizontal' />
                     </Heading>
+                    <Flex minH='400px' w='100%' border='1px solid white' align='center' justify='center'>
+                        <Flex w='400px' h='350px' bg='gray' borderRadius='lg' boxShadow='dark-lg' m='4'>
+
+                        </Flex>
+                        <Flex w='400px' h='350px' bg='gray' borderRadius='lg' boxShadow='dark-lg' m='4'>
+
+                        </Flex>
+                        
+                    </Flex>
                 </Flex>
                 
             </Flex>

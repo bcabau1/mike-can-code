@@ -1,15 +1,16 @@
-import { Box, Container } from "@chakra-ui/layout"
+import { Box, Center } from "@chakra-ui/layout"
 import Card from "./card"
 
 
-const TimelineElement = ({props, children}) =>  {
+const TimelineElement = (hasLeft) =>  {
 
     return (
         <Card>
-            <Box w='100%' h='100%'>
-                    {children}
+            <Box position='relative' w='50px' h='50px' borderRadius='full' bg='white'>
+
             </Box> 
-        </Card>       
+            { hasLeft ? <Box position='relative' h='3px' w='15%' bg='gray'/> : '' }
+        </Card>
     )
 }
 
@@ -54,7 +55,8 @@ const experiences = [
 export default function Timeline()  {
     return (
         <Box minH='400px' w='100%' border='1px solid white'>
-            <TimelineElement/>
+            <TimelineElement hasLeft={true}/>
+            <TimelineElement hasLeft={false}/>
         </Box>
     )
 }
